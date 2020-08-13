@@ -1,0 +1,259 @@
+﻿.teams-title {
+    height: 150px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    text-transform: capitalize;
+}
+.teams-title-left {
+    width: 50%;
+    font-size: 65px;
+    line-height: 110px;
+    border-top-right-radius: 20px;
+    border-top: 5px solid #d92323;
+    border-right: 5px solid #d92323;
+}
+.teams-title-right {
+    width: 50%;
+    padding: 20px;
+    color: #d92323;
+}
+.team-item-left{
+    grid-column: 1/7;
+}
+.team-item-right {
+    grid-column: 7/13;
+}
+.team-item-left, .team-item-right {
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+    .team-item-left:hover, .team-item-right:hover{
+        border-radius:10px;
+    }
+    .team-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-column-gap: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        padding-bottom: 40px;
+    }
+    .team-row .team-item-name {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 10px;
+    }
+        .team-row .team-item-name .team-item-name-text {
+            line-height: 40px;
+            font-size: 28px;
+            text-transform: capitalize;
+            display: flex;
+        }
+            .team-row .team-item-name .team-item-name-text span {
+                display: inline-block;
+                width: 6px;
+                height: 24px;
+                margin-right: 10px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 5px;
+            }
+            .team-row .team-item-name .team-item-name-logo {
+                height: 100%;
+                overflow: hidden;
+            }
+            .team-row .team-item-name .team-item-name-logo img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+    .team-row .team-item-drivers {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: space-between;
+    }
+        .team-row .team-item-drivers .driver-preview {
+            width: 47%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            padding: 0px 0px;
+            margin: 10px 0px;
+            overflow: hidden;
+            transition: 0.4s;
+            transition-delay: 0.1s;
+            padding-left:10px;
+        }
+            .team-row .team-item-drivers .driver-preview:hover {
+                border: 1px solid #000;
+                border-bottom-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+                .team-row .team-item-drivers .driver-preview:hover  .driver-preview-text{
+                    transform: translateX(5px);
+                }
+            .team-row .team-item-drivers .driver-preview .driver-preview-text {
+                font-size: 22px;
+                line-height: 48px;
+                transition: 0.4s;
+            }
+            .team-row .team-item-drivers .driver-preview:hover .driver-preview-image {
+                transform: translateX(-5px);
+            }
+            .team-row .team-item-drivers .driver-preview .driver-preview-image {
+                height: 100%;
+                width: 50px;
+                transition: 0.4s;
+            }
+            .team-row .team-item-drivers .driver-preview .driver-preview-image img {
+                max-height: 100%;
+            }
+
+.team-row .team-item-cars {
+    width: 100%;
+    padding: 5px 80px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-top: none;
+    border-right: 1px solid #fff;
+    border-bottom-left-radius: 10px;
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+        .team-row .team-item-cars img {
+            max-width: 100%;   
+        }
+.team-item-left:hover .team-item-cars, .team-item-right:hover .team-item-cars {
+    border: 1px solid #fff;
+    border-top: none;
+}
+.mercedes {
+    border-top: 2px solid #08e3de;
+    border-right: 2px solid #08e3de;
+}
+    .mercedes:hover {
+        box-shadow: -2px 1px 9px 1px #08e3de;
+    }
+    .mercedesspan {
+        background-color: #08e3de;
+    }
+.haas {
+    border-top: 2px solid #787878;
+    border-right: 2px solid #787878;
+}
+    .haas:hover {
+        box-shadow: -2px 1px 9px 1px #787878;
+    }
+.haasspan {
+    background-color: #787878;
+}
+.mclaren {
+    border-top: 2px solid #FF8700;
+    border-right: 2px solid #FF8700;
+}
+    .mclaren:hover {
+        box-shadow: -2px 1px 9px 1px #FF8700;
+    }
+    .mclarenspan {
+        background-color: #FF8700;
+    }
+.alfaromeo {
+    border-top: 2px solid #960000;
+    border-right: 2px solid #960000;
+}
+    .alfaromeo:hover {
+        box-shadow: -2px 1px 9px 1px #960000;
+    }
+    .alfaromeospan {
+        background-color: #960000;
+    }
+.redbull {
+    border-top: 2px solid #0600ef;
+    border-right: 2px solid #0600ef;
+}
+    .redbull:hover {
+        box-shadow: -2px 1px 9px 1px #0600ef;
+    }
+    .redbullspan {
+        background-color: #0600ef;
+    }
+.renault {
+    border-top: 2px solid #FFF500;
+    border-right: 2px solid #FFF500;
+}
+    .renault:hover {
+        box-shadow: -2px 1px 9px 1px #FFF500;
+    }
+    .renaultspan {
+        background-color: #FFF500;
+    }
+.ferrari {
+    border-top: 2px solid #DC0000;
+    border-right: 2px solid #DC0000;
+}
+    .ferrari:hover {
+        box-shadow: -2px 1px 9px 1px #DC0000;
+    }
+    .ferrarispan {
+        background-color: #DC0000;
+    }
+.alphatauri {
+    border-top: 2px solid #e4e4e4;
+    border-right: 2px solid #e4e4e4;
+}
+    .alphatauri:hover {
+        box-shadow: -2px 1px 9px 1px #e4e4e4;
+    }
+    .alphataurispan {
+        background-color: #e4e4e4;
+    }
+.williams {
+    border-top: 2px solid #0082fa;
+    border-right: 2px solid #0082fa;
+}
+    .williams:hover {
+        box-shadow: -2px 1px 9px 1px #0082fa;
+    }
+    .williamsspan {
+        background-color: #0082fa;
+    }
+.racingpoint {
+    border-top: 2px solid #F596C8;
+    border-right: 2px solid #F596C8;
+}
+    .racingpoint:hover {
+        box-shadow: -2px 1px 9px 1px #F596C8;
+    }
+    .racingpointspan {
+        background-color: #F596C8;
+    }
+
+.teams-advertise {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+    .teams-advertise img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: -1px -2px 3px #426e2f;
+        cursor: pointer;
+    }

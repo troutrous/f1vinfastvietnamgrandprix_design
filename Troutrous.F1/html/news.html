@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>News</title>
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../images/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="troutrous">
+        <div id="menu">
+            <ul class="root">
+                <li class="root-item">
+                    <div class="box-root" id="home">
+                        <a href="https://localhost:44381/html/home.html" target="_top">VietNam Vinfast Grand Prix 2020</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                </li>
+                <li class="root-item">
+
+                    <div class="box-root">
+                        <a href="#">Về chúng tôi</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-about">
+                            <li class="sub-menu-item"><a href="#">Thông cáo báo chí</a></li>
+                            <li class="sub-menu-item"><a href="#">Trách nhiệm cộng đồng</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Cà phê cùng F1</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/teams.html#" target="_top">Các đội đua</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-teams">
+                            <li class="sub-menu-item"><a href="#">Alfa Romeo Racing</a></li>
+                            <li class="sub-menu-item"><a href="#">AlphaTauri</a></li>
+                            <li class="sub-menu-item"><a href="#">Ferrari</a></li>
+                            <li class="sub-menu-item"><a href="haas.html" target="_top">Haas</a></li>
+                            <li class="sub-menu-item"><a href="#">McLaren</a></li>
+                            <li class="sub-menu-item" id="mercedespage"><a href="https://localhost:44381/html/mercedes.html" target="_top">Mercedes</a></li>
+                            <li class="sub-menu-item"><a href="#">Racing Point</a></li>
+                            <li class="sub-menu-item"><a href="#">Red Bull</a></li>
+                            <li class="sub-menu-item"><a href="#">Renault</a></li>
+                            <li class="sub-menu-item"><a href="#">Williams</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root" id="news">
+                        <a href="https://localhost:44381/html/news.html" style="color:#d92323;">Tin tức</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-news">
+                            <li class="sub-menu-item"><a href="#">Diễn biến mùa giải</a></li>
+                            <li class="sub-menu-item"><a href="#">Tạp chí công nghệ xe</a></li>
+                            <li class="sub-menu-item"><a href="#">Lịch sử giải đua</a></li>
+                            <li class="sub-menu-item"><a href="#">Góc khán đài Hà Nội</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Thông tin chặng đua</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <span class="root-item-border"></span>
+                </li>
+
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Đặt vé</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root search-root">
+                        <div class="search-item">
+                            <input type="text" name="searchall" />
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root user-root">
+                        <i class="far fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="login-area" loginstatus="false">
+            <form class="login-form">
+                <div class="form-nav"><i class="fas fa-times"></i></div>
+                <h1>Login</h1>
+                <div class="box-form">
+                    <input name="username" id="txtUserNameSignIn" type="text" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                </div>
+
+                <div class="box-form">
+                    <input name="password" id="txtPassWordSignIn" type="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                </div>
+                <input type="button" class="btn-log" value="Login" />
+                <div class="box-sign-up">
+                    <span style="color:#ffffff; cursor:default">Don't have account?</span>
+                    <a href="#" id="signup-request">Sign up</a>
+                </div>
+                <div class="icon-login">
+                    <div class="icon-login-item" id="loginwithfacebook"></div>
+                    <div class="icon-login-item" id="loginwithgoogle"></div>
+                </div>
+            </form>
+            <form class="signup-form">
+                <div class="form-nav">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <h1>Sign Up</h1>
+                <div class="box-form">
+                    <input type="text" name="username" id="txtUserNameSignUp" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtConfirmPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Enter The Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <input type="button" class="btn-sign" value="Sign Up" />
+
+            </form>
+        </div>
+        <div class="news-content">
+            <div class="news-hightlight">
+                <a href="news-vettel-roi-ferrari-cuoi-mua-2020.html" target="_top" class="n-h-1">
+                    <div class="image-preview">
+                        <img src="../images/vettel-1589268322-1589268330-8644-1589268373_900x540.jpg" alt="Vettel rời Ferrari cuối mùa 2020" />
+                    </div>
+                    <div class="title-preview">Vettel rời Ferrari cuối mùa 2020</div>
+                    <div class="text-preview">Tay đua Sebastian Vettel trắng tay ở Ferrari vì sự vượt trội của Mercedes và Lewis Hamilton, bên cạnh loạt sai lầm do tâm lý.</div>
+                </a>
+                <a href="news-xe-dua-f1-chay-vong-quanh-ha-lan.html" target="_top" class="n-h-2">
+                    <div class="image-preview">
+                        <img src="../images/a-1588649717-1692-1588649810_300x180.jpg" alt="Xe đua F1 chạy vòng quanh Hà Lan" />
+                    </div>
+                    <div class="title-preview">Xe đua F1 chạy vòng quanh Hà Lan</div>
+                </a>
+                <a href="news-grand-prix-hungary-dua-khong-khan-gia.html" target="_top" class="n-h-3">
+                    <div class="image-preview">
+                        <img src="../images/a-1588380517-6903-1588380574_300x180.jpg" alt="Grand Prix Hungary đua không khán giả" />
+                    </div>
+                    <div class="title-preview">Grand Prix Hungary đua không khán giả</div>
+                </a>
+                <a href="news-f1-dinh-to-chuc-ba-chang-lien-o-anh.html" target="_top" class="n-h-4">
+                    <div class="image-preview">
+                        <img src="../images/silver-1587148711-1587148720-6089-1587148938_300x180.jpg" alt="F1 định tổ chức ba chặng liền ở Anh" />
+                    </div>
+                    <div class="title-preview">F1 định tổ chức ba chặng liền ở Anh</div>
+                </a>
+                <a href="news-f1-tiep-tuc-lui-ngay-khoi-tranh.html" target="_top" class="n-h-5">
+                    <div class="image-preview">
+                        <img src="../images/a-1586394861-2815-1586394972_300x180.jpg" alt="F1 tiếp tục lùi ngày khởi tranh" />
+                    </div>
+                    <div class="title-preview">F1 tiếp tục lùi ngày khởi tranh</div>
+                </a>
+            </div>
+            <div class="news-list">
+                <ul>
+                    <li>
+                        <a href="news-huy-chang-f1-tai-phap.html" target="_top" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="../images/untitled-1587979994-5059-1587980117_300x180.jpg" alt="Hủy chặng F1 tại Pháp" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Hủy chặng F1 tại Pháp</div>
+                                <div class="date-upload">27/4/2020 | 16:56</div>
+                                <div class="text-preview">Mùa giải F1 2020 tiếp tục lùi ngày khởi tranh sang đầu tháng 7, sau khi Grand Prix Pháp bị hủy.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/04/10/a-1586504215-7554-1586504418_300x180.jpg" alt="McLaren: 'Ferrari và Red Bull đang đùa với lửa'" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">McLaren: 'Ferrari và Red Bull đang đùa với lửa'</div>
+                                <div class="date-upload">10/4/2020 | 15:16</div>
+                                <div class="text-preview">Lãnh đội McLaren Zak Brown ám chỉ Ferrari và Red Bull đang không tuân thủ quy định giới hạn ngân sách của F1.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/04/09/a-1586418469-4564-1586418561_300x180.jpg" alt="F1 có khả năng thi đấu không khán giả" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">F1 có khả năng thi đấu không khán giả</div>
+                                <div class="date-upload">9/4/2020 | 15:22</div>
+                                <div class="text-preview">Giám đốc mảng đua xe F1, Ross Brawn tin rằng chặng mở màn năm nay có thể đóng cửa với khán giả.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/04/07/a-1586261170-9439-1586261272_300x180.jpg" alt="F1 được khuyên huỷ mùa giải 2020" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">F1 được khuyên huỷ mùa giải 2020</div>
+                                <div class="date-upload">8/4/2020 | 00:00</div>
+                                <div class="text-preview">Nhà vô địch F1 năm 1997 Jacques Villeneuve cho rằng F1 không nên cố hoàn thành mùa giải vì lợi ích kinh tế.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/04/06/a-1586145282-5752-1586145355_300x180.jpg" alt="Leclerc thắng chặng đua ảo F1 Việt Nam" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Leclerc thắng chặng đua ảo F1 Việt Nam</div>
+                                <div class="date-upload">6/4/2020 | 11:35</div>
+                                <div class="text-preview">Tay đua Ferrari, Charles Leclerc về nhất chặng đua mô phỏng do F1 tổ chức hôm qua 5/4 - thời điểm mà lẽ ra Việt Nam GP được tổ chức nếu không vì Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news-f1-thay-the-duong-dua-viet-nam-trong-giai-ao.html" target="_top" class="khandaihanoi">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/04/05/a-jpeg-1586074088-1740-1586074230_300x180.jpg" alt="F1 thay thế đường đua Việt Nam trong giải ảo" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">F1 thay thế đường đua Việt Nam trong giải ảo</div>
+                                <div class="date-upload">5/4/2020 | 21:14</div>
+                                <div class="text-preview">Tối 5/4, các tay đua sẽ thi đấu ở đường đua ảo GP Australia vì F1 chưa cập nhật chặng Việt Nam trong hệ thống mô phỏng.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/31/a-1585632426-5146-1585632508_300x180.jpg" alt="Đề xuất cho tay đua F1 nhiễm nCoV" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Đề xuất cho tay đua F1 nhiễm nCoV</div>
+                                <div class="date-upload">31/3/2020 | 13:56</div>
+                                <div class="text-preview">Cố vấn đội Red Bull F1 Helmut Marko từng đưa ra ý tưởng cho các tay đua tiếp xúc với nCoV để có thể trạng tốt khi mùa giải bắt đầu.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="congnghexe">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/30/a-1585558378-6637-1585558432_300x180.jpg" alt="Các đội đua F1 sản xuất thiết bị y tế chống Covid-19" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Các đội đua F1 sản xuất thiết bị y tế chống Covid-19</div>
+                                <div class="date-upload">30/3/2020 | 16:18</div>
+                                <div class="text-preview">Bảy đội đua F1 đáp lại kêu gọi hỗ trợ của chính phủ Anh về việc sản xuất thiết bị y tế, trong khi Ferrari góp sức chống dịch tại Italy.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news-ferrari-muon-vettel-giam-luong.html" target="_top" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/28/a-1585360186-1623-1585360272_300x180.jpg" alt="Ferrari muốn Vettel giảm lương" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Ferrari muốn Vettel giảm lương</div>
+                                <div class="date-upload">28/3/2020 | 10:19</div>
+                                <div class="text-preview">Đội đua F1 Ferrari muốn giảm lương và ký hợp đồng mới có thời hạn một năm với Sebastian Vettel.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/24/a-1585007787-1539-1585007826_300x180.jpg" alt="Hoãn chặng đua F1 ở Azerbaijan" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Hoãn chặng đua F1 ở Azerbaijan</div>
+                                <div class="date-upload">24/3/2020 | 07:06</div>
+                                <div class="text-preview">Grand Prix Azerbaijan, tại Baku đầu tháng Sáu, là chặng thứ tám của F1 mùa này bị hoãn vì Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/20/top-1584670201-1454-1584670348_300x180.jpg" alt="F1 hoãn thêm ba chặng" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">F1 hoãn thêm ba chặng</div>
+                                <div class="date-upload">20/3/2020 | 09:14</div>
+                                <div class="text-preview">Ba chặng Hà Lan, Tây Ban Nha và Monaco bị hoãn do ảnh hưởng của Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/19/a-1584576439-8609-1584576511_300x180.jpg" alt="Giám đốc F1 xin lỗi" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Giám đốc F1 xin lỗi</div>
+                                <div class="date-upload">19/3/2020 | 07:36</div>
+                                <div class="text-preview">Giám đốc điều hành Chase Carey viết tâm thư tạ lỗi người hâm mộ khi mùa giải 2020 bị trì hoãn vì Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/19/a-jpeg-1584575231-5968-1584575314_300x180.jpg" alt="F1 đảo lịch nghỉ hè lên tháng 3" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">F1 đảo lịch nghỉ hè lên tháng 3</div>
+                                <div class="date-upload">19/3/2020 | 07:28</div>
+                                <div class="text-preview">Kỳ nghỉ hè thường niên vào tháng 8 của F1 được chuyển sang tháng 3 và tháng 4 để đối phó với Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news-giam-doc-f1-mua-2020-co-it-nhat-17-18-chang-dua.html" target="_top" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/15/a-1584257831-1918-1584257932_300x180.jpg" alt="Giám đốc F1: 'Mùa 2020 có ít nhất 17-18 chặng đua'" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Giám đốc F1: 'Mùa 2020 có ít nhất 17-18 chặng đua'</div>
+                                <div class="date-upload">15/3/2020 | 16:34</div>
+                                <div class="text-preview">Giám đốc điều hành F1 Ross Brawn tự tin sẽ sắp xếp một lịch thi đấu hợp lý sau khi giải đua bị ảnh hưởng bởi Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="khandaihanoi">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/13/f1-1583922039-1583922049-15839-6309-7833-1584100130_300x180.jpg" alt="Hoãn chặng đua F1 Việt Nam" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Hoãn chặng đua F1 Việt Nam</div>
+                                <div class="date-upload">13/3/2020 | 19:19</div>
+                                <div class="text-preview">HÀ NỘI - Ban tổ chức Grand Prix Việt Nam thông báo chặng đua tại Hà Nội sẽ không diễn ra ngày 5/4 theo dự định, vì Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/13/skysportsf1australiangp4936285-8613-2054-1584063733_300x180.jpg" alt="Hủy chặng mở màn F1 2020" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Hủy chặng mở màn F1 2020</div>
+                                <div class="date-upload">13/3/2020 | 08:43</div>
+                                <div class="text-preview">Chặng đua Melbourne, diễn ra cuối tuần này theo lịch trình ban đầu, đã bị hủy sau khi một thành viên của đội McLaren dương tính với nCoV.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/12/mclaren-1584015033-1584015041-2875-3161-1584015236_300x180.jpg" alt="McLaren rút khỏi chặng F1 Australia" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">
+                                    McLaren rút khỏi chặng F1 Australia
+                                </div>
+                                <div class="date-upload">12/3/2020 | 19:18</div>
+                                <div class="text-preview">AUSTRALIA - Đội đua F1 McLaren không thể dự chặng mở màn ở Melbourne, vì một thành viên của họ dương tính với nCoV.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/11/f1-1583936399-1400-1583936475_300x180.jpg" alt="Ba thành viên đội đua F1 tự cách ly" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Ba thành viên đội đua F1 tự cách ly</div>
+                                <div class="date-upload">12/3/2020 | 00:00</div>
+                                <div class="text-preview">AUSTRALIA - Một thành viên McLaren và hai thành viên Haas phải tự cách ly từ 11/3, sau khi gặp các triệu chứng giống Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/10/untitled-1583810932-7534-1583811188_300x180.jpg" alt="Ferrari mong được chào đón tại Australia GP" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Ferrari mong được chào đón tại Australia GP</div>
+                                <div class="date-upload">10/3/2020 | 13:18</div>
+                                <div class="text-preview">Lãnh đội Mattia Binotto hy vọng đội đua Italy không khiến mọi người lo ngại dù đến từ vùng dịch Covid-19.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dienbienmuagiai">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/09/fer-1583762698-1583762707-1583-7721-2749-1583762753_300x180.jpg" alt="Cựu tay đua F1 đòi loại Ferrari" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Cựu tay đua F1 đòi loại Ferrari</div>
+                                <div class="date-upload">10/3/2020 | 04:00</div>
+                                <div class="text-preview">Timo Glock - cựu tay đua Toyota - đề nghị Ferrari bị truất quyền thi đấu vì gian lận trong thiết kế động cơ.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="lichsugiaidua">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/03/03/2003F1Congthuc1thaydoiquatungt-4001-5802-1583235992_300x180.jpg" alt="Những thay đổi của F1 qua thời gian" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Những thay đổi của F1 qua thời gian</div>
+                                <div class="date-upload">3/3/2020 | 19:00</div>
+                                <div class="text-preview">Công thức (Formula) trong tên của giải là thuật ngữ chỉ những quy tắc áp dụng trong giải đua, các đội đều có nghĩa vụ tuân thủ.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="khandaihanoi">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/28/carey-1582844116-1582844129-8859-1582844251_300x180.jpg" alt="Chủ tịch F1: 'Chặng đua Việt Nam diễn ra như kế hoạch'" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Chủ tịch F1: 'Chặng đua Việt Nam diễn ra như kế hoạch'</div>
+                                <div class="date-upload">28/2/2020 | 07:22</div>
+                                <div class="text-preview">Chủ tịch điều hành F1 - ông Chase Carey - khẳng định chặng đua Grand Prix Việt Nam vẫn diễn ra ngày 5/4.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="khandaihanoi">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/28/1-1582861491-1725-1582861825_300x180.jpg" alt="Hoàn thiện phần đường đua F1 Hà Nội" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Hoàn thiện phần đường đua F1 Hà Nội</div>
+                                <div class="date-upload">28/2/2020 | 11:00</div>
+                                <div class="text-preview">Đơn vị tổ chức chặng đua F1 ở Việt Nam xác nhận hoàn tất 5,607 km đường đua và các hạng mục cố định sau hơn 11 tháng thi công.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="congnghexe">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/22/mercedes-1582304824-1582304832-2942-8921-1582304950_300x180.jpg" alt="'Vô-lăng ba chiều' bị cấm từ năm 2021" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">
+                                    'Vô-lăng ba chiều' bị cấm từ năm 2021
+                                </div>
+                                <div class="date-upload">22/2/2020 | 06:17</div>
+                                <div class="text-preview">Sáng chế "Vô-lăng kép" của đội đua F1 Mercedes bị Liên đoàn đua ô tô thế giới (FIA) cấm từ mùa giải 2021.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="congnghexe">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/14/mer3-jfif-1581697295-158169730-8684-8125-1581697344_300x180.jpg" alt="Mercedes ra mắt W11" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Mercedes ra mắt W11</div>
+                                <div class="date-upload">15/2/2020 | 00:00</div>
+                                <div class="text-preview">Đội đua Mercedes công bố mẫu xe W11 cho mùa F1 2020 hôm 14/2, với điều chỉnh đáng kể ở hông xe.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="congnghexe">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/12/untitled-1581502770-2769-1581502834_300x180.jpg" alt="Ferrari trình làng mẫu xe cho mùa giải 2020" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Ferrari trình làng mẫu xe cho mùa giải 2020</div>
+                                <div class="date-upload">13/2/2020 | 00:00</div>
+                                <div class="text-preview">Lãnh đội Mattia Binotto nói Ferrari đã đưa thiết kế chiếc SF 1000 đến mức tuyệt đỉnh.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="khandaihanoi">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/06/untitled-1580975287-4264-1580975347_300x180.jpg" alt="Các đội F1 tranh luận về GP Việt Nam" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Các đội F1 tranh luận về GP Việt Nam</div>
+                                <div class="date-upload">7/2/2020 | 12:35</div>
+                                <div class="text-preview">Một số đội đua e ngại khả năng chặng F1 đầu tiên tại Việt Nam có thể bị hoãn hoặc hủy vì dịch virus corona.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="khandaihanoi">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2020/02/06/untitled-1580975287-4264-1580975347_300x180.jpg" alt="Các đội F1 tranh luận về GP Việt Nam" />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Các đội F1 tranh luận về GP Việt Nam</div>
+                                <div class="date-upload">7/2/2020 | 12:35</div>
+                                <div class="text-preview">Một số đội đua e ngại khả năng chặng F1 đầu tiên tại Việt Nam có thể bị hoãn hoặc hủy vì dịch virus corona.</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="lichsugiaidua">
+                            <div class="image-preview">
+                                <img src="https://i-thethao.vnecdn.net/2019/11/04/lewis-hamilton-va-su-nghiep-f1-do-so-1572862128_300x180.jpg" alt="Lewis Hamilton và con đường trở thành huyền thoại F1 " />
+                            </div>
+                            <div class="content-preview">
+                                <div class="title-preview">Lewis Hamilton và con đường trở thành huyền thoại F1 </div>
+                                <div class="date-upload">5/11/2019 | 10:44</div>
+                                <div class="text-preview">Chức vô địch mùa 2019 đưa Lewis Hamilton lên vị trí số hai trong bảng vàng thành tích của các huyền thoại F1.</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="news-nav">
+                    <div class="news-filter">
+                        <ul>
+                            <li id="liallnews"><button>Tất cả</button></li>
+                            <li><button>Diễn biến mùa giải</button></li>
+                            <li><button>Công nghệ xe</button></li>
+                            <li><button>Lịch sử giải đua</button></li>
+                            <li><button>Khán đài Hà Nội</button></li>
+                        </ul>
+                    </div>
+                    <div class="news-ads">
+                        <img src="https://adtima-media.zadn.vn/2020/04/7decd5e7-454d-4d85-a9d0-aa9bc4c8cf7c.jpg" alt="Zalo-Ads" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fas fa-angle-double-up" style="line-height:50px"></i>
+    </div>
+
+    <div class="home-footer">
+        <div class="contact-infor">
+            <div class="logo-organizer"></div>
+            <div class="other-infor">
+                <div style="color: #ffffff;height: 60px;line-height: 60px;text-align: center;font-family: 'Prompt', sans-serif;">KẾT NỐI VỚI CHÚNG TÔI</div>
+                <div class="customer-care">
+                    <ul>
+                        <li><span style="cursor: default;">HOTLINE VÉ DOANH NGHIỆP: </span><span style="color: #ffd800; cursor: pointer;">+84 915 73 44 66</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ BÁN VÉ/TÀI TRỢ/MUA VÉ: </span><span style="color: #ffd800;cursor: pointer;">CHAMSOCKHACHHANG@F1VIETNAMGP.COM</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ QUỐC TẾ: </span><span style="color: #ffd800;cursor: pointer;">VIETNAMGP.RESELLER@PG-MC.COM</span></li>
+                    </ul>
+                </div>
+                <div class="app-care">
+                    <div class="app-care-item googleplay" style="margin-right: 20px"></div>
+                    <div class="app-care-item appstore" style="margin-right: 20px"></div>
+                    <div class="app-care-item huaweiapp"></div>
+                </div>
+                <div class="license">
+                    <span style="color: #ffd800;cursor: pointer;text-decoration:underline">Điều khoản và điều kiện sử dụng</span> | © 2019. Bản quyền thuộc về Vietnam Grand Prix LLC
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration-title">KHÔNG MUỐN BỎ LỠ NHỮNG SỰ KIỆN HẤP DẪN?<br /> ĐĂNG KÝ NHẬN THÔNG TIN NGAY!</div>
+            <div class="registration-infor">
+                <div class="registration-infor-name">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="TÊN/NAME"></span>
+                </div>
+                <div class="registration-infor-phone">
+                    <input type="tel" />
+                    <span class="effect-regis" data-placeholder="SỐ ĐIỆN THOẠI/NUMBER PHONE"></span>
+                </div>
+                <div class="registration-infor-address">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="ĐỊA CHỈ/ADDRESS"></span>
+                </div>
+                <div class="registration-infor-email">
+                    <input type="email" />
+                    <span class="effect-regis" data-placeholder="EMAIL"></span>
+                </div>
+                <div class="registration-infor-interested">
+                    <div class="interested-root">
+                        <input type="button" value="TÔI QUAN TÂM ĐẾN THÔNG TIN..." />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="interested-sub">
+                        <ul>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ PHỔ THÔNG</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ KHÁN ĐÀI</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ DOANH NGHIỆP</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>THÔNG TIN MỚI NHẤT VỀ F1 VINFAST VIETNAM GRAND PRIX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-infor-policy">
+                    <div class="policy-title">CHÍNH SÁCH BẢO MẬT</div>
+                    <div class="policy-preview">
+                        Vietnam Grand Prix LLC tôn trọng quyền riêng tư của bạn và bảo vệ thông tin cá nhân của người dùng,
+                        theo yêu cầu của pháp luật.<br />
+                        Chính sách bảo mật phác thảo cách chúng tôi quản lý thông tin cá nhân của người dùng.
+                    </div>
+                    <div class="policy-accept">
+                        <i class="far fa-square"><i class="fas fa-check"></i></i>
+                        <span style="cursor:default;">Tôi đồng ý với </span><span style="text-decoration: underline;color: #ffd800;cursor: pointer;">Chính sách bảo mật</span>
+                    </div>
+                </div>
+                <div class="registration-infor-accept">
+                    <input type="submit" name="name" value="ĐĂNG KÍ" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="time">
+        <div class="time-item"><span></span> Days</div>
+        <div class="time-item"><span></span> Hours</div>
+        <div class="time-item"><span></span> Minutes</div>
+        <div class="time-item"><span></span> Seconds</div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

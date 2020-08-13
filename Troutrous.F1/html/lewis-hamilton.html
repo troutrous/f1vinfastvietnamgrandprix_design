@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lewis Hamilton</title>
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../images/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/teamitem.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="troutrous">
+        <div id="menu">
+            <ul class="root">
+                <li class="root-item">
+                    <div class="box-root" id="home">
+                        <a href="https://localhost:44381/html/home.html" target="_top">VietNam Vinfast Grand Prix 2020</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                </li>
+                <li class="root-item">
+
+                    <div class="box-root">
+                        <a href="#">Về chúng tôi</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-about">
+                            <li class="sub-menu-item"><a href="#">Thông cáo báo chí</a></li>
+                            <li class="sub-menu-item"><a href="#">Trách nhiệm cộng đồng</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Cà phê cùng F1</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root" id="teams">
+                        <a href="https://localhost:44381/html/teams.html#" target="_top" style="color:#d92323;">Các đội đua</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-teams">
+                            <li class="sub-menu-item"><a href="#">Alfa Romeo Racing</a></li>
+                            <li class="sub-menu-item"><a href="#">AlphaTauri</a></li>
+                            <li class="sub-menu-item"><a href="#">Ferrari</a></li>
+                            <li class="sub-menu-item"><a href="haas.html" target="_top">Haas</a></li>
+                            <li class="sub-menu-item"><a href="#">McLaren</a></li>
+                            <li class="sub-menu-item" id="mercedespage"><a href="https://localhost:44381/html/mercedes.html" target="_top">Mercedes</a></li>
+                            <li class="sub-menu-item"><a href="#">Racing Point</a></li>
+                            <li class="sub-menu-item"><a href="#">Red Bull</a></li>
+                            <li class="sub-menu-item"><a href="#">Renault</a></li>
+                            <li class="sub-menu-item"><a href="#">Williams</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root" id="news">
+                        <a href="https://localhost:44381/html/news.html" target="_top">Tin tức</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-news">
+                            <li class="sub-menu-item"><a href="#">Diễn biến mùa giải</a></li>
+                            <li class="sub-menu-item"><a href="#">Tạp chí công nghệ xe</a></li>
+                            <li class="sub-menu-item"><a href="#">Lịch sử giải đua</a></li>
+                            <li class="sub-menu-item"><a href="#">Góc khán đài Hà Nội</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Thông tin chặng đua</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <span class="root-item-border"></span>
+                </li>
+
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Đặt vé</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root search-root">
+                        <div class="search-item">
+                            <input type="text" name="searchall" />
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root user-root">
+                        <i class="far fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="login-area" loginstatus="false">
+            <form class="login-form">
+                <div class="form-nav"><i class="fas fa-times"></i></div>
+                <h1>Login</h1>
+                <div class="box-form">
+                    <input name="username" id="txtUserNameSignIn" type="text" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                </div>
+
+                <div class="box-form">
+                    <input name="password" id="txtPassWordSignIn" type="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                </div>
+                <input type="button" class="btn-log" value="Login" />
+                <div class="box-sign-up">
+                    <span style="color:#ffffff; cursor:default">Don't have account?</span>
+                    <a href="#" id="signup-request">Sign up</a>
+                </div>
+                <div class="icon-login">
+                    <div class="icon-login-item" id="loginwithfacebook"></div>
+                    <div class="icon-login-item" id="loginwithgoogle"></div>
+                </div>
+            </form>
+            <form class="signup-form">
+                <div class="form-nav">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <h1>Sign Up</h1>
+                <div class="box-form">
+                    <input type="text" name="username" id="txtUserNameSignUp" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtConfirmPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Enter The Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <input type="button" class="btn-sign" value="Sign Up" />
+
+            </form>
+        </div>
+        <div class="news-content">
+            <div class="team-basic-information">
+                <section class="team-driver">
+                    <div class="team-driver-item width100">
+                        <div class="driver-portrait">
+                            <img src="../images/1584013371803.jpg" />
+                        </div>
+                        <div class="driver-text">
+                            <span class="driver-number">44</span>
+                            <span class="driver-name">Lewis Hamilton</span>
+                            <span class="driver-team">Mercedes</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="team-base">
+                    <section class="team-brand">
+                        <div>
+                        </div>
+                        <div class="brand-logo">
+                            <img src="../images/1583764321181.png" />
+                        </div>
+                        <div class="brand-quicklinks">
+                            <ul>
+                                <li>Year-by-year profile</li>
+                                <li>Official Merchandise</li>
+                                <li>Results Archive</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="team-archive">
+                        <table class="stat-list">
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Team</span>
+
+                                    </th>
+                                    <td class="stat-value">Mercedes</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Country</span>
+
+                                    </th>
+                                    <td class="stat-value">United Kingdom</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Podiums</span>
+
+                                    </th>
+                                    <td class="stat-value">151</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Points</span>
+
+                                    </th>
+                                    <td class="stat-value">3431</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Grands Prix entered</span>
+
+                                    </th>
+                                    <td class="stat-value">250</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">World Championships</span>
+
+                                    </th>
+                                    <td class="stat-value">6</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Highest race finish</span>
+
+                                    </th>
+                                    <td class="stat-value">1 (x84)</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Highest grid position</span>
+
+                                    </th>
+                                    <td class="stat-value">1</td>
+
+                                </tr>
+
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Date of birth</span>
+
+                                    </th>
+                                    <td class="stat-value">07/01/1985</td>
+
+                                </tr>
+
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Place of birth</span>
+
+                                    </th>
+                                    <td class="stat-value">Stevenage, England</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+
+            </div>
+            <div class="team-title">
+                Lewis Hamilton
+                <img src="../images/1536080051510.jpg" />
+            </div>
+
+            <div class="team-profile">
+                <div class="team-profile-title-one">Biography</div>
+                <div class="team-profile-text">
+                    ‘Still I Rise’ – these are the words emblazoned across the back of Lewis Hamilton’s helmet and tattooed across his shoulders, and ever since annihilating expectations with one of the greatest rookie performances in F1 history in 2007, that’s
+                    literally all he’s done: risen to the top of the all-time pole positions list ahead of his hero Ayrton Senna, surged into second place in the wins column behind only the inimitable Michael Schumacher, and surpassed the legendary Sir Jackie Stewart for the most championship titles by a British driver.
+                </div>
+                <div class="team-profile-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qc3iIW3Dyy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="team-profile-text">
+                    Could he be the G.O.A.T? Few would deny that he’s in the conversation – and what’s more he’s got there his way
+                    , twinning his relentless speed with a refusal to conform to stereotypes for how a racing driver should think, dress or behave.
+                </div>
+                <div class="team-profile-text">
+                    Respect is hard earned in F1, but Hamilton has it from every one of his peers. Why? Because they know that whatever the track,
+                    whatever the conditions, whatever the situation, when his visor goes down and the lights go out, it’s Hammertime.
+                </div>
+            </div>
+
+            <div class="team-slide-information">
+                <div class="team-slide-back">
+                </div>
+                <div class="team-slide-next">
+                </div>
+                <div class="team-slide-images">
+                    <div class="team-slide-image-item slide-prev">
+                        <img src="../images/lewis/1527447274382.jpg" />
+                    </div>
+                    <div class="team-slide-image-item slide-show">
+                        <img src="../images/lewis/1521959293384.jpg" />
+                    </div>
+                    <div class="team-slide-image-item slide-next">
+                        <img src="../images/lewis/1521943993298.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1523024681994.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1523196854970.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1523695837996.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1523619223199.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1525014172498.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1525093783100.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1526139773215.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1526229458321.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1527091809859.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1527447274382.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/lewis/1521959293384.jpg" />
+                    </div>
+                </div>
+                <div class="team-slide-footer">
+                    <div class="team-slide-counter">1/12</div>
+                    <div class="team-slide-texts">
+                        <div class="team-slide-text-item"></div>
+                        <div class="team-slide-text-item active">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+
+                                Formula One World Championship, Rd1, Australian Grand Prix, Race, Melbourne, Australia, Sunday 25 March 2018. © Manuel Goria/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 on a scooter at Formula One World Championship, Rd1, Australian Grand Prix, Race, Melbourne, Australia,
+                                Sunday 25 March 2018. © Manuel Goria/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+ at Formula One World Championship, Rd2, Bahrain Grand Prix, Practice, Bahrain International
+                                Circuit, Sakhir, Bahrain, Friday 6 April 2018. © Jerry Andre/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 on the drivers parade at Formula One World Championship, Rd2, Bahrain Grand Prix, Race, Bahrain International
+                                Circuit, Sakhir, Bahrain, Sunday 8 April 2018. © Manuel Goria/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+ at Formula One World Championship, Rd3, Chinese Grand Prix, Qualifying,
+                                Shanghai, China, Saturday 14 April 2018. © Simon Galloway/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+ at Formula One World Championship, Rd3, Chinese Grand Prix, Practice,
+                                Shanghai, China, Friday 13 April 2018. © Jerry Andre/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Race winner Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+ takes the
+                                chequered flag at Formula One World Championship, Rd4, Azerbaijan Grand Prix, Race, Baku City Circuit, Baku, Azerbaijan, Sunday 29 April 2018. © Mark Sutton/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+
+                                www.sutton-images.com Race winner Lewis Hamilton (GBR) Mercedes-AMG F1 celebrates with the team and the champagne at Formula One World Championship, Rd4,
+                                Azerbaijan Grand Prix, Race, Baku City Circuit, Baku, Azerbaijan, Sunday 29 April 2018. BEST IMAGE © Sutton Images,Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Pole sitter Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+ waves at Formula One World Championship, Rd5, Spanish Grand Prix,
+                                Qualifying, Barcelona, Spain, Saturday 12 May 2018. © Manuel Goria/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Race winner Lewis Hamilton (GBR) Mercedes-AMG F1 celebrates in parc ferme at Formula One World Championship,
+                                Rd5, Spanish Grand Prix, Race, Barcelona, Spain, Sunday 13 May 2018. © Manuel Goria/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 and MV Agusta motorbike at Formula One World Championship,
+                                Rd6, Monaco Grand Prix, Preparations, Monte-Carlo, Monaco, Wednesday 23 May 2018. © Jerry Andre/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                Lewis Hamilton (GBR) Mercedes-AMG F1 W09 EQ Power+ at Formula One World
+                                Championship, Rd6, Monaco Grand Prix, Race, Monte-Carlo, Monaco, Sunday 27 May 2018. © Manuel Goria/Sutton Images
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-relate">
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Lewis Hamilton - 2008, 2014, 2015, 2017-2019</span>
+                    </div>
+                </div>
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Valtteri Bottas</span>
+                    </div>
+                </div>
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Nico Rosberg - 2016</span>
+                    </div>
+                </div>
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Juan Manuel Fangio - 1951, 1954-1957</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fas fa-angle-double-up" style="line-height:50px"></i>
+    </div>
+
+    <div class="home-footer">
+        <div class="contact-infor">
+            <div class="logo-organizer"></div>
+            <div class="other-infor">
+                <div style="color: #ffffff;height: 60px;line-height: 60px;text-align: center;font-family: 'Prompt', sans-serif;">KẾT NỐI VỚI CHÚNG TÔI</div>
+                <div class="customer-care">
+                    <ul>
+                        <li><span style="cursor: default;">HOTLINE VÉ DOANH NGHIỆP: </span><span style="color: #ffd800; cursor: pointer;">+84 915 73 44 66</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ BÁN VÉ/TÀI TRỢ/MUA VÉ: </span><span style="color: #ffd800;cursor: pointer;">CHAMSOCKHACHHANG@F1VIETNAMGP.COM</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ QUỐC TẾ: </span><span style="color: #ffd800;cursor: pointer;">VIETNAMGP.RESELLER@PG-MC.COM</span></li>
+                    </ul>
+                </div>
+                <div class="app-care">
+                    <div class="app-care-item googleplay" style="margin-right: 20px"></div>
+                    <div class="app-care-item appstore" style="margin-right: 20px"></div>
+                    <div class="app-care-item huaweiapp"></div>
+                </div>
+                <div class="license">
+                    <span style="color: #ffd800;cursor: pointer;text-decoration:underline">Điều khoản và điều kiện sử dụng</span> | © 2019. Bản quyền thuộc về Vietnam Grand Prix LLC
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration-title">KHÔNG MUỐN BỎ LỠ NHỮNG SỰ KIỆN HẤP DẪN?<br /> ĐĂNG KÝ NHẬN THÔNG TIN NGAY!</div>
+            <div class="registration-infor">
+                <div class="registration-infor-name">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="TÊN/NAME"></span>
+                </div>
+                <div class="registration-infor-phone">
+                    <input type="tel" />
+                    <span class="effect-regis" data-placeholder="SỐ ĐIỆN THOẠI/NUMBER PHONE"></span>
+                </div>
+                <div class="registration-infor-address">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="ĐỊA CHỈ/ADDRESS"></span>
+                </div>
+                <div class="registration-infor-email">
+                    <input type="email" />
+                    <span class="effect-regis" data-placeholder="EMAIL"></span>
+                </div>
+                <div class="registration-infor-interested">
+                    <div class="interested-root">
+                        <input type="button" value="TÔI QUAN TÂM ĐẾN THÔNG TIN..." />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="interested-sub">
+                        <ul>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ PHỔ THÔNG</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ KHÁN ĐÀI</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ DOANH NGHIỆP</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>THÔNG TIN MỚI NHẤT VỀ F1 VINFAST VIETNAM GRAND PRIX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-infor-policy">
+                    <div class="policy-title">CHÍNH SÁCH BẢO MẬT</div>
+                    <div class="policy-preview">
+                        Vietnam Grand Prix LLC tôn trọng quyền riêng tư của bạn và bảo vệ thông tin cá nhân của người dùng,
+                        theo yêu cầu của pháp luật.<br />
+                        Chính sách bảo mật phác thảo cách chúng tôi quản lý thông tin cá nhân của người dùng.
+                    </div>
+                    <div class="policy-accept">
+                        <i class="far fa-square"><i class="fas fa-check"></i></i>
+                        <span style="cursor:default;">Tôi đồng ý với </span><span style="text-decoration: underline;color: #ffd800;cursor: pointer;">Chính sách bảo mật</span>
+                    </div>
+                </div>
+                <div class="registration-infor-accept">
+                    <input type="submit" name="name" value="ĐĂNG KÍ" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="time">
+        <div class="time-item"><span></span> Days</div>
+        <div class="time-item"><span></span> Hours</div>
+        <div class="time-item"><span></span> Minutes</div>
+        <div class="time-item"><span></span> Seconds</div>
+    </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/teamitem.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Valtteri Bottas</title>
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../images/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/teamitem.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="troutrous">
+        <div id="menu">
+            <ul class="root">
+                <li class="root-item">
+                    <div class="box-root" id="home">
+                        <a href="https://localhost:44381/html/home.html" target="_top">VietNam Vinfast Grand Prix 2020</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                </li>
+                <li class="root-item">
+
+                    <div class="box-root">
+                        <a href="#">Về chúng tôi</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-about">
+                            <li class="sub-menu-item"><a href="#">Thông cáo báo chí</a></li>
+                            <li class="sub-menu-item"><a href="#">Trách nhiệm cộng đồng</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Cà phê cùng F1</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root" id="teams">
+                        <a href="https://localhost:44381/html/teams.html#" target="_top" style="color:#d92323;">Các đội đua</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-teams">
+                            <li class="sub-menu-item"><a href="#">Alfa Romeo Racing</a></li>
+                            <li class="sub-menu-item"><a href="#">AlphaTauri</a></li>
+                            <li class="sub-menu-item"><a href="#">Ferrari</a></li>
+                            <li class="sub-menu-item"><a href="haas.html" target="_top">Haas</a></li>
+                            <li class="sub-menu-item"><a href="#">McLaren</a></li>
+                            <li class="sub-menu-item" id="mercedespage"><a href="https://localhost:44381/html/mercedes.html" target="_top">Mercedes</a></li>
+                            <li class="sub-menu-item"><a href="#">Racing Point</a></li>
+                            <li class="sub-menu-item"><a href="#">Red Bull</a></li>
+                            <li class="sub-menu-item"><a href="#">Renault</a></li>
+                            <li class="sub-menu-item"><a href="#">Williams</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root" id="news">
+                        <a href="https://localhost:44381/html/news.html" target="_top">Tin tức</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-news">
+                            <li class="sub-menu-item"><a href="#">Diễn biến mùa giải</a></li>
+                            <li class="sub-menu-item"><a href="#">Tạp chí công nghệ xe</a></li>
+                            <li class="sub-menu-item"><a href="#">Lịch sử giải đua</a></li>
+                            <li class="sub-menu-item"><a href="#">Góc khán đài Hà Nội</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Thông tin chặng đua</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <span class="root-item-border"></span>
+                </li>
+
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Đặt vé</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root search-root">
+                        <div class="search-item">
+                            <input type="text" name="searchall" />
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root user-root">
+                        <i class="far fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="login-area" loginstatus="false">
+            <form class="login-form">
+                <div class="form-nav"><i class="fas fa-times"></i></div>
+                <h1>Login</h1>
+                <div class="box-form">
+                    <input name="username" id="txtUserNameSignIn" type="text" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                </div>
+
+                <div class="box-form">
+                    <input name="password" id="txtPassWordSignIn" type="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                </div>
+                <input type="button" class="btn-log" value="Login" />
+                <div class="box-sign-up">
+                    <span style="color:#ffffff; cursor:default">Don't have account?</span>
+                    <a href="#" id="signup-request">Sign up</a>
+                </div>
+                <div class="icon-login">
+                    <div class="icon-login-item" id="loginwithfacebook"></div>
+                    <div class="icon-login-item" id="loginwithgoogle"></div>
+                </div>
+            </form>
+            <form class="signup-form">
+                <div class="form-nav">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <h1>Sign Up</h1>
+                <div class="box-form">
+                    <input type="text" name="username" id="txtUserNameSignUp" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtConfirmPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Enter The Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <input type="button" class="btn-sign" value="Sign Up" />
+
+            </form>
+        </div>
+        <div class="news-content">
+            <div class="team-basic-information">
+                <section class="team-driver">
+                    <div class="team-driver-item width100">
+                        <div class="driver-portrait">
+                            <img src="../images/1584013243241.jpg" />
+                        </div>
+                        <div class="driver-text">
+                            <span class="driver-number">77</span>
+                            <span class="driver-name">Valtteri Bottas</span>
+                            <span class="driver-team">Mercedes</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="team-base">
+                    <section class="team-brand">
+                        <div class="brand-logo">
+                            <img src="../images/bottas/1583764320953.png" />
+                        </div>
+                        <div class="brand-quicklinks">
+                            <ul>
+                                <li>Year-by-year profile</li>
+                                <li>Official Merchandise</li>
+                                <li>Results Archive</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="team-archive">
+                        <table class="stat-list">
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Team</span>
+
+                                    </th>
+                                    <td class="stat-value">Mercedes</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Country</span>
+
+                                    </th>
+                                    <td class="stat-value">Finland</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Podiums</span>
+
+                                    </th>
+                                    <td class="stat-value">45</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Points</span>
+
+                                    </th>
+                                    <td class="stat-value">1289</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Grands Prix entered</span>
+
+                                    </th>
+                                    <td class="stat-value">140</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">World Championships</span>
+
+                                    </th>
+                                    <td class="stat-value">N/A</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Highest race finish</span>
+
+                                    </th>
+                                    <td class="stat-value">1 (x7)</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Highest grid position</span>
+
+                                    </th>
+                                    <td class="stat-value">1</td>
+
+                                </tr>
+
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Date of birth</span>
+
+                                    </th>
+                                    <td class="stat-value">28/08/1989</td>
+
+                                </tr>
+
+
+
+                                <tr>
+                                    <th scope="row" class="stat-key">
+
+                                        <span class="text">Place of birth</span>
+
+                                    </th>
+                                    <td class="stat-value">Nastola, Finland</td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+
+            </div>
+            <div class="team-title">
+                Valtteri Bottas
+                <img src="../images/bottas/1423762801690.gif" />
+            </div>
+
+            <div class="team-profile">
+                <div class="team-profile-title-one">Biography</div>
+                <div class="team-profile-text">
+                    Learning his craft on Finnish roads of ice and snow, he was born to be a Grand Prix racer.
+                </div>
+                <div class="team-profile-text">
+                    Bottas explains that if you can drive on the frozen roads of his homeland then you can drive anywhere. Then there’s the Finnish mentality –reserved, diligent and calm the fast lane of F1 doesn’t faze him.
+                </div>
+                <div class="team-profile-text">
+                    Making his F1 debut with Williams in 2013, Bottas soon became part of the family. Points and podiums followed with the reliable racer even amassing the most points without a win, a record he resented but that showcased his ability. The fact the Finn was such a points
+                    machine saw him suddenly promoted to the most coveted seat in F1 - Nico Rosberg’s vacant championship-winning seat at Mercedes.
+                </div>
+                <div class="team-profile-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iROh4AWhcXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="team-profile-text">
+                        Bottas blossomed at the Silver Arrows in 2017, unleashing his pace to clock up personal pole positions and victories as well as a
+                        team championship for the famous Mercedes marque alongside Lewis Hamilton. He even tied with Hamilton and Sebastian Vettel with 13 podiums.
+                    </div>
+                    <div class="team-profile-text">
+                        For a shy guy, it brought a confidence boost and a new swagger – albeit in a very demur Finnish fashion. He would need all that confidence in 2018 – a season Bottas described as his worst in F1, as he took zero
+                        wins to Hamilton’s 11. That, though, was a reflection more of his team mate’s brilliance thank of any shortcomings on his own part.
+                    </div>
+                    <div class="team-profile-text">
+                        Bottas stepped it up a level in 2019, four victories securing a convincing second in the championship behind Hamilton. But he must dig even deeper if he’s to regularly beat the man on the other
+                        side of the garage - and fend off the Ferraris and Red Bulls - and drive home as the fourth Finnish world champion.
+                    </div>
+                </div>
+
+                <div class="team-slide-information">
+                    <div class="team-slide-back">
+                    </div>
+                    <div class="team-slide-next">
+                    </div>
+                    <div class="team-slide-images">
+                        <div class="team-slide-image-item slide-prev">
+
+                            <img src="../images/bottas/1493567759879.jpg" />
+                        </div>
+                        <div class="team-slide-image-item slide-show">
+                            <img src="../images/bottas/1425039926726.jpg" />
+                        </div>
+                        <div class="team-slide-image-item slide-next">
+                            <img src="../images/bottas/1425038242104.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+                            <img src="../images/bottas/1425038426921.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1425039849671.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1425038996293.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1473009665956.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1493571653667.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1493573712179.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1493567759879.jpg" />
+                        </div>
+                        <div class="team-slide-image-item">
+
+                            <img src="../images/bottas/1425039926726.jpg" />
+                        </div>
+                    </div>
+                    <div class="team-slide-footer">
+                        <div class="team-slide-counter">1/9</div>
+                        <div class="team-slide-texts">
+                            <div class="team-slide-text-item"></div>
+                            <div class="team-slide-text-item active">
+                                <span>
+
+                                    Valtteri Bottas (FIN) Williams FW37 at Formula One Testing, Day Three, Barcelona, Spain, 21 February 2015.
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+                                    Second placed Valtteri Bottas (FIN) Williams celebrates in parc ferme. Formula One World Championship, Rd9, British Grand Prix, Race Day, Silverstone, England, Sunday 6 July 2014. BEST IMAGE
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+
+                                    Valtteri Bottas (FIN) Williams FW36. Formula One World Championship, Rd11, Hungarian Grand Prix, Qualifying, Hungaroring, Hungary. Saturday 26 July 2014.
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+
+                                    Valtteri Bottas (Williams) celebrates his 2nd place finish. Formula One World Championship, Rd9, British Grand Prix, Race Day, Silverstone, England, Sunday 6 July 2014.
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+
+                                    Valtteri Bottas (FIN) Williams FW36. Formula One World Championship, Rd2, Malaysian Grand Prix, Practice, Sepang, Malaysia, Friday 28 March 2014.
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+
+                                    Valtteri Bottas (FIN) Williams FW38 at Formula One World Championship, Rd14, Italian Grand Prix, Race, Monza, Italy, Sunday 4 September 2016. © Sutton Images
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+                                    Race winner Valtteri Bottas (FIN) Mercedes AMG F1 celebrates on the podium with the champagne at Formula One World Championship, Rd4, Russian Grand Prix, Race, Sochi Autodrom, Sochi, Krasnodar Krai, Russia, Sunday 30 April 2017. © Sutton Motorsport Images
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+
+                                    Valtteri Bottas (FIN) Mercedes-Benz F1 W08 Hybrid makes a pistop at Formula One World Championship, Rd4, Russian Grand Prix, Race, Sochi Autodrom, Sochi, Krasnodar Krai, Russia, Sunday 30 April 2017. © Sutton Motorsport Images
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item">
+                                <span>
+                                    Race winner Valtteri Bottas (FIN) Mercedes AMG F1 celebrates with the team at Formula One World Championship, Rd4, Russian Grand Prix, Race, Sochi Autodrom, Sochi, Krasnodar Krai, Russia, Sunday 30 April 2017. © Sutton Motorsport Images
+                                </span>
+                            </div>
+                            <div class="team-slide-text-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-relate">
+                    <div class="team-relate-item">
+                        <div class="team-relate-item-title">
+                            <span>Lewis Hamilton - 2008, 2014, 2015, 2017-2019</span>
+                        </div>
+                    </div>
+                    <div class="team-relate-item">
+                        <div class="team-relate-item-title">
+                            <span>Valtteri Bottas</span>
+                        </div>
+                    </div>
+                    <div class="team-relate-item">
+                        <div class="team-relate-item-title">
+                            <span>Nico Rosberg - 2016</span>
+                        </div>
+                    </div>
+                    <div class="team-relate-item">
+                        <div class="team-relate-item-title">
+                            <span>Juan Manuel Fangio - 1951, 1954-1957</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fas fa-angle-double-up" style="line-height:50px"></i>
+    </div>
+
+    <div class="home-footer">
+        <div class="contact-infor">
+            <div class="logo-organizer"></div>
+            <div class="other-infor">
+                <div style="color: #ffffff;height: 60px;line-height: 60px;text-align: center;font-family: 'Prompt', sans-serif;">KẾT NỐI VỚI CHÚNG TÔI</div>
+                <div class="customer-care">
+                    <ul>
+                        <li><span style="cursor: default;">HOTLINE VÉ DOANH NGHIỆP: </span><span style="color: #ffd800; cursor: pointer;">+84 915 73 44 66</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ BÁN VÉ/TÀI TRỢ/MUA VÉ: </span><span style="color: #ffd800;cursor: pointer;">CHAMSOCKHACHHANG@F1VIETNAMGP.COM</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ QUỐC TẾ: </span><span style="color: #ffd800;cursor: pointer;">VIETNAMGP.RESELLER@PG-MC.COM</span></li>
+                    </ul>
+                </div>
+                <div class="app-care">
+                    <div class="app-care-item googleplay" style="margin-right: 20px"></div>
+                    <div class="app-care-item appstore" style="margin-right: 20px"></div>
+                    <div class="app-care-item huaweiapp"></div>
+                </div>
+                <div class="license">
+                    <span style="color: #ffd800;cursor: pointer;text-decoration:underline">Điều khoản và điều kiện sử dụng</span> | © 2019. Bản quyền thuộc về Vietnam Grand Prix LLC
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration-title">KHÔNG MUỐN BỎ LỠ NHỮNG SỰ KIỆN HẤP DẪN?<br /> ĐĂNG KÝ NHẬN THÔNG TIN NGAY!</div>
+            <div class="registration-infor">
+                <div class="registration-infor-name">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="TÊN/NAME"></span>
+                </div>
+                <div class="registration-infor-phone">
+                    <input type="tel" />
+                    <span class="effect-regis" data-placeholder="SỐ ĐIỆN THOẠI/NUMBER PHONE"></span>
+                </div>
+                <div class="registration-infor-address">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="ĐỊA CHỈ/ADDRESS"></span>
+                </div>
+                <div class="registration-infor-email">
+                    <input type="email" />
+                    <span class="effect-regis" data-placeholder="EMAIL"></span>
+                </div>
+                <div class="registration-infor-interested">
+                    <div class="interested-root">
+                        <input type="button" value="TÔI QUAN TÂM ĐẾN THÔNG TIN..." />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="interested-sub">
+                        <ul>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ PHỔ THÔNG</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ KHÁN ĐÀI</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ DOANH NGHIỆP</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>THÔNG TIN MỚI NHẤT VỀ F1 VINFAST VIETNAM GRAND PRIX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-infor-policy">
+                    <div class="policy-title">CHÍNH SÁCH BẢO MẬT</div>
+                    <div class="policy-preview">
+                        Vietnam Grand Prix LLC tôn trọng quyền riêng tư của bạn và bảo vệ thông tin cá nhân của người dùng,
+                        theo yêu cầu của pháp luật.<br />
+                        Chính sách bảo mật phác thảo cách chúng tôi quản lý thông tin cá nhân của người dùng.
+                    </div>
+                    <div class="policy-accept">
+                        <i class="far fa-square"><i class="fas fa-check"></i></i>
+                        <span style="cursor:default;">Tôi đồng ý với </span><span style="text-decoration: underline;color: #ffd800;cursor: pointer;">Chính sách bảo mật</span>
+                    </div>
+                </div>
+                <div class="registration-infor-accept">
+                    <input type="submit" name="name" value="ĐĂNG KÍ" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="time">
+        <div class="time-item"><span></span> Days</div>
+        <div class="time-item"><span></span> Hours</div>
+        <div class="time-item"><span></span> Minutes</div>
+        <div class="time-item"><span></span> Seconds</div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/teamitem.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

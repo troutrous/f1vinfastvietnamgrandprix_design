@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mercedes</title>
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../images/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/teamitem.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="troutrous">
+        <div id="menu">
+            <ul class="root">
+                <li class="root-item">
+                    <div class="box-root" id="home">
+                        <a href="https://localhost:44381/html/home.html" target="_top">VietNam Vinfast Grand Prix 2020</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                </li>
+                <li class="root-item">
+
+                    <div class="box-root">
+                        <a href="#">Về chúng tôi</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-about">
+                            <li class="sub-menu-item"><a href="#">Thông cáo báo chí</a></li>
+                            <li class="sub-menu-item"><a href="#">Trách nhiệm cộng đồng</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Cà phê cùng F1</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/teams.html#" target="_top" style="color:#d92323;">Các đội đua</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-teams">
+                            <li class="sub-menu-item"><a href="#">Alfa Romeo Racing</a></li>
+                            <li class="sub-menu-item"><a href="#">AlphaTauri</a></li>
+                            <li class="sub-menu-item"><a href="#">Ferrari</a></li>
+                            <li class="sub-menu-item"><a href="haas.html" target="_top">Haas</a></li>
+                            <li class="sub-menu-item"><a href="#">McLaren</a></li>
+                            <li class="sub-menu-item" id="mercedespage"><a href="https://localhost:44381/html/mercedes.html" target="_top">Mercedes</a></li>
+                            <li class="sub-menu-item"><a href="#">Racing Point</a></li>
+                            <li class="sub-menu-item"><a href="#">Red Bull</a></li>
+                            <li class="sub-menu-item"><a href="#">Renault</a></li>
+                            <li class="sub-menu-item"><a href="#">Williams</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/news.html" target="_top">Tin tức</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-news">
+                            <li class="sub-menu-item"><a href="#">Diễn biến mùa giải</a></li>
+                            <li class="sub-menu-item"><a href="#">Tạp chí công nghệ xe</a></li>
+                            <li class="sub-menu-item"><a href="#">Lịch sử giải đua</a></li>
+                            <li class="sub-menu-item"><a href="#">Góc khán đài Hà Nội</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Thông tin chặng đua</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <span class="root-item-border"></span>
+                </li>
+
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Đặt vé</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root search-root">
+                        <div class="search-item">
+                            <input type="text" name="searchall" />
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root user-root">
+                        <i class="far fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="login-area" loginstatus="false">
+            <form class="login-form">
+                <div class="form-nav"><i class="fas fa-times"></i></div>
+                <h1>Login</h1>
+                <div class="box-form">
+                    <input name="username" id="txtUserNameSignIn" type="text" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                </div>
+
+                <div class="box-form">
+                    <input name="password" id="txtPassWordSignIn" type="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                </div>
+                <input type="button" class="btn-log" value="Login" />
+                <div class="box-sign-up">
+                    <span style="color:#ffffff; cursor:default">Don't have account?</span>
+                    <a href="#" id="signup-request">Sign up</a>
+                </div>
+                <div class="icon-login">
+                    <div class="icon-login-item" id="loginwithfacebook"></div>
+                    <div class="icon-login-item" id="loginwithgoogle"></div>
+                </div>
+            </form>
+            <form class="signup-form">
+                <div class="form-nav">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <h1>Sign Up</h1>
+                <div class="box-form">
+                    <input type="text" name="username" id="txtUserNameSignUp" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtConfirmPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Enter The Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <input type="button" class="btn-sign" value="Sign Up" />
+
+            </form>
+        </div>
+        <div class="news-content">
+            <div class="team-title">
+                Mercedes
+            </div>
+            <div class="team-basic-information">
+                <div class="team-base">
+                    <section class="team-brand">
+                        <div>
+                        </div>
+                        <div class="brand-logo">
+                            <img src="../images/1582638375557.jpg" />
+                        </div>
+                        <div class="brand-quicklinks">
+                            <ul>
+                                <li>Year-by-year profile</li>
+                                <li>Official Merchandise</li>
+                                <li>Results Archive</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="team-archive">
+                        <table class="stat-list">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Full Team Name</span>
+                                    </th>
+                                    <td class="stat-value">Mercedes-AMG Petronas F1 Team</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Base</span>
+                                    </th>
+                                    <td class="stat-value">Brackley, United Kingdom</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Team Chief</span>
+                                    </th>
+                                    <td class="stat-value">Toto Wolff</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Technical Chief</span>
+                                    </th>
+                                    <td class="stat-value">James Allison</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Chassis</span>
+                                    </th>
+                                    <td class="stat-value">W11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Power Unit</span>
+                                    </th>
+                                    <td class="stat-value">Mercedes</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">First Team Entry</span>
+                                    </th>
+                                    <td class="stat-value">1970</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">World Championships</span>
+                                    </th>
+                                    <td class="stat-value">6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Highest Race Finish</span>
+                                    </th>
+                                    <td class="stat-value">1 (x93)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Pole Positions</span>
+                                    </th>
+                                    <td class="stat-value">103</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="stat-key">
+                                        <span class="text">Fastest Laps</span>
+                                    </th>
+                                    <td class="stat-value">66</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <section class="team-driver">
+                    <a href="lewis-hamilton.html" target="_top" class="team-driver-item">
+                        <div class="driver-portrait">
+                            <img src="../images/1584013371803.jpg" />
+                        </div>
+                        <div class="driver-text">
+                            <span class="driver-number">44</span>
+                            <span class="driver-name">Lewis Hamilton</span>
+                            <span class="driver-team">Mercedes</span>
+                        </div>
+                    </a>
+                    <a href="valtteri-bottas.html" target="_top" class="team-driver-item">
+                        <div class="driver-portrait">
+                            <img src="../images/1584013243241.jpg" />
+                        </div>
+                        <div class="driver-text">
+                            <span class="driver-number">77</span>
+                            <span class="driver-name">Valtteri Bottas</span>
+                            <span class="driver-team">Mercedes</span>
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="team-slide-information">
+                <div class="team-slide-back">
+                </div>
+                <div class="team-slide-next">
+                </div>
+                <div class="team-slide-images">
+                    <div class="team-slide-image-item slide-prev">
+                        <img src="../images/1552642797774.jpg" />
+                    </div>
+                    <div class="team-slide-image-item slide-show">
+                        <img src="../images/1553765782996.jpg" />
+                    </div>
+                    <div class="team-slide-image-item slide-next">
+                        <img src="../images/1553600453124.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552818939103.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552812311407.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552811368424.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552800775366.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552727693518.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552717049366.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1552642797774.jpg" />
+                    </div>
+                    <div class="team-slide-image-item">
+                        <img src="../images/1553765782996.jpg" />
+                    </div>
+                </div>
+                <div class="team-slide-footer">
+                    <div class="team-slide-counter">1/9</div>
+                    <div class="team-slide-texts">
+                        <div class="team-slide-text-item"></div>
+                        <div class="team-slide-text-item active">
+                            <span>
+                                BAHRAIN INTERNATIONAL CIRCUIT, BAHRAIN - MARCH 28: Mercedes AMG
+                                F1 W10 engine cover during the Bahrain GP at Bahrain International
+                                Circuit on March 28, 2019 in Bahrain International Circuit, Bahrain.
+                                (Photo by Mark Sutton / Sutton Images) © Motorsport Images Tel: +44(0)20 8267 3000 email:
+                                info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 17: Valtteri Bottas, Mercedes AMG W10, leads
+                                Lewis Hamilton, Mercedes AMG F1 W10 during the Australian GP at Melbourne Grand Prix Circuit on
+                                March 17, 2019 in Melbourne Grand Prix Circuit, Australia. (Photo by LAT Images) © Motorsport Images
+                                Tel: +44 (0) 20 3405 8100 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 17: Valtteri Bottas, Mercedes AMG F1, 1st position,
+                                sprays the victory Champagne into his face during the Australian GP at Melbourne Grand Prix Circuit on March
+                                17, 2019 in Melbourne Grand Prix Circuit, Australia. (Photo by LAT Images) © Motorsport Images Tel: +44 (0) 20 3405 8100 email:
+                                info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 17: Confetti around the car of Valtteri Bottas, Mercedes AMG W10, 1st position during the Australian GP at Melbourne Grand Prix Circuit on March 17,
+                                2019 in Melbourne Grand Prix Circuit, Australia. (Photo by Steven Tee / LAT Images) © Motorsport Images Tel: +44 (0) 20 3405 8100 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 17: Valtteri Bottas, Mercedes AMG F1, 1st position, with his trophy during the Australian GP at Melbourne Grand Prix Circuit on March 17,
+                                2019 in Melbourne Grand Prix Circuit, Australia. (Photo by Mark Sutton / Sutton Images) © Motorsport Images Tel: +44(0)20 8267 3000 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 17: Lewis Hamilton, Mercedes AMG F1, in the drivers parade during the Australian GP at Melbourne Grand Prix Circuit on March 17,
+                                2019 in Melbourne Grand Prix Circuit, Australia. (Photo by Zak Mauger / LAT Images) © Motorsport Images Tel: +44(0)20 8267 3000 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 16: Valtteri Bottas, Mercedes AMG W10 during the Australian GP at Melbourne Grand Prix Circuit on March 16,
+                                2019 in Melbourne Grand Prix Circuit, Australia. (Photo by Joe Portlock / LAT Images) © Motorsport Images Tel: +44(0)20 8267 3000 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 16: Lewis Hamilton, Mercedes AMG F1 W10, leaves the garage during the Australian GP at Melbourne Grand Prix Circuit on March 16,
+                                2019 in Melbourne Grand Prix Circuit, Australia. (Photo by Zak Mauger / LAT Images) © Motorsport Images Tel: +44(0)20 8267 3000 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item">
+                            <span>
+                                MELBOURNE GRAND PRIX CIRCUIT, AUSTRALIA - MARCH 15: Lewis Hamilton, Mercedes AMG F1 W10 during the Australian GP at Melbourne Grand Prix Circuit on March 15, 2019
+                                in Melbourne Grand Prix Circuit, Australia. © Motorsport Images Tel: +44 (0) 20 3405 8100 email: info@motorsportimages.com
+                            </span>
+                        </div>
+                        <div class="team-slide-text-item"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-profile">
+                <div class="team-profile-title-one">In profile</div>
+                <div class="team-profile-text">
+                    Mercedes’ modern F1 revival started with the creation of a works squad for 2010 - the platform for a meteoric rise up the Grand Prix order. The team generated huge excitement from the off with the sensational return of Michael Schumacher, but headlines soon followed on track: three podiums in their debut season, all via Nico Rosberg - who then claimed a breakthrough pole/victory double at China in 2012. The following season he was paired with Lewis Hamilton, the duo going on to stage some epic title battles as the Silver Arrows swept all before them
+                    to become one of the most dominant forces of the modern F1 era. And with Hamilton now partnered by steely Finn Valtteri Bottas, Mercedes remain very much the team to beat…
+                </div>
+                <div class="team-profile-video">
+                    <iframe src="https://www.youtube.com/embed/ilj6fp54YS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="team-profile-title-two">2019</div>
+                <div class="team-profile-text">
+                    Start the season with an unprecedented five one-two victories, and follow it up with a further 10 wins, thus securing their sixth title double on the bounce. All-round teamwork, rather than outright pace, is often the key to success. Valtteri Bottas ups his game,
+                    meaning Lewis Hamilton has to work hard to secure his sixth drivers’ crown, bringing the Brit tantalising close to matching Michael Schumacher’s all-time record.
+                </div>
+                <div class="team-profile-title-two">2018</div>
+                <div class="team-profile-text">
+                    It’s a season predominantly about Lewis Hamilton, whose 11 victories help secure a fifth consecutive championship double for the team – despite rivals Ferrari often having the quicker car – continuing their
+                    dominance of the turbo-hybrid era. Team mate Valtteri Bottas ends the year winless after being forced to play rear-gunner to the rampant Hamilton.
+                </div>
+                <div class="team-profile-title-two">2017</div>
+                <div class="team-profile-text">
+                    See off a stern title challenge from Ferrari, as their W08 car proves – by their own admission – to be something of a ‘diva’. With old adversary Nico Rosberg gone, Lewis Hamilton settles nicely into his role as the team’s
+                    de facto number one, leading them to a fourth successive championship double, as new partner Valtteri Bottas scores his first (three) race wins.
+                </div>
+            </div>
+            <div class="team-relate">
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Lewis Hamilton - 2008, 2014, 2015, 2017-2019</span>
+                    </div>
+                </div>
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Valtteri Bottas</span>
+                    </div>
+                </div>
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Nico Rosberg - 2016</span>
+                    </div>
+                </div>
+                <div class="team-relate-item">
+                    <div class="team-relate-item-title">
+                        <span>Juan Manuel Fangio - 1951, 1954-1957</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fas fa-angle-double-up" style="line-height:50px"></i>
+    </div>
+
+    <div class="home-footer">
+        <div class="contact-infor">
+            <div class="logo-organizer"></div>
+            <div class="other-infor">
+                <div style="color: #ffffff;height: 60px;line-height: 60px;text-align: center;font-family: 'Prompt', sans-serif;">KẾT NỐI VỚI CHÚNG TÔI</div>
+                <div class="customer-care">
+                    <ul>
+                        <li><span style="cursor: default;">HOTLINE VÉ DOANH NGHIỆP: </span><span style="color: #ffd800; cursor: pointer;">+84 915 73 44 66</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ BÁN VÉ/TÀI TRỢ/MUA VÉ: </span><span style="color: #ffd800;cursor: pointer;">CHAMSOCKHACHHANG@F1VIETNAMGP.COM</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ QUỐC TẾ: </span><span style="color: #ffd800;cursor: pointer;">VIETNAMGP.RESELLER@PG-MC.COM</span></li>
+                    </ul>
+                </div>
+                <div class="app-care">
+                    <div class="app-care-item googleplay" style="margin-right: 20px"></div>
+                    <div class="app-care-item appstore" style="margin-right: 20px"></div>
+                    <div class="app-care-item huaweiapp"></div>
+                </div>
+                <div class="license">
+                    <span style="color: #ffd800;cursor: pointer;text-decoration:underline">Điều khoản và điều kiện sử dụng</span> | © 2019. Bản quyền thuộc về Vietnam Grand Prix LLC
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration-title">KHÔNG MUỐN BỎ LỠ NHỮNG SỰ KIỆN HẤP DẪN?<br /> ĐĂNG KÝ NHẬN THÔNG TIN NGAY!</div>
+            <div class="registration-infor">
+                <div class="registration-infor-name">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="TÊN/NAME"></span>
+                </div>
+                <div class="registration-infor-phone">
+                    <input type="tel" />
+                    <span class="effect-regis" data-placeholder="SỐ ĐIỆN THOẠI/NUMBER PHONE"></span>
+                </div>
+                <div class="registration-infor-address">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="ĐỊA CHỈ/ADDRESS"></span>
+                </div>
+                <div class="registration-infor-email">
+                    <input type="email" />
+                    <span class="effect-regis" data-placeholder="EMAIL"></span>
+                </div>
+                <div class="registration-infor-interested">
+                    <div class="interested-root">
+                        <input type="button" value="TÔI QUAN TÂM ĐẾN THÔNG TIN..." />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="interested-sub">
+                        <ul>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ PHỔ THÔNG</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ KHÁN ĐÀI</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ DOANH NGHIỆP</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>THÔNG TIN MỚI NHẤT VỀ F1 VINFAST VIETNAM GRAND PRIX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-infor-policy">
+                    <div class="policy-title">CHÍNH SÁCH BẢO MẬT</div>
+                    <div class="policy-preview">
+                        Vietnam Grand Prix LLC tôn trọng quyền riêng tư của bạn và bảo vệ thông tin cá nhân của người dùng,
+                        theo yêu cầu của pháp luật.<br />
+                        Chính sách bảo mật phác thảo cách chúng tôi quản lý thông tin cá nhân của người dùng.
+                    </div>
+                    <div class="policy-accept">
+                        <i class="far fa-square"><i class="fas fa-check"></i></i>
+                        <span style="cursor:default;">Tôi đồng ý với </span><span style="text-decoration: underline;color: #ffd800;cursor: pointer;">Chính sách bảo mật</span>
+                    </div>
+                </div>
+                <div class="registration-infor-accept">
+                    <input type="submit" name="name" value="ĐĂNG KÍ" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="time">
+        <div class="time-item"><span></span> Days</div>
+        <div class="time-item"><span></span> Hours</div>
+        <div class="time-item"><span></span> Minutes</div>
+        <div class="time-item"><span></span> Seconds</div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/teamitem.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

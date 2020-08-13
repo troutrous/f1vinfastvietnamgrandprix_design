@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Teams</title>
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../images/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/teams.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="troutrous">
+        <div id="menu">
+            <ul class="root">
+                <li class="root-item">
+                    <div class="box-root" id="home">
+                        <a href="https://localhost:44381/html/home.html" target="_top">VietNam Vinfast Grand Prix 2020</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                </li>
+                <li class="root-item">
+
+                    <div class="box-root">
+                        <a href="#">Về chúng tôi</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-about">
+                            <li class="sub-menu-item"><a href="#">Thông cáo báo chí</a></li>
+                            <li class="sub-menu-item"><a href="#">Trách nhiệm cộng đồng</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Cà phê cùng F1</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/teams.html#" target="_top" style="color:#d92323;">Các đội đua</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-teams">
+                            <li class="sub-menu-item"><a href="#">Alfa Romeo Racing</a></li>
+                            <li class="sub-menu-item"><a href="#">AlphaTauri</a></li>
+                            <li class="sub-menu-item"><a href="#">Ferrari</a></li>
+                            <li class="sub-menu-item"><a href="haas.html" target="_top">Haas</a></li>
+                            <li class="sub-menu-item"><a href="#">McLaren</a></li>
+                            <li class="sub-menu-item" id="mercedespage"><a href="https://localhost:44381/html/mercedes.html" target="_top">Mercedes</a></li>
+                            <li class="sub-menu-item"><a href="#">Racing Point</a></li>
+                            <li class="sub-menu-item"><a href="#">Red Bull</a></li>
+                            <li class="sub-menu-item"><a href="#">Renault</a></li>
+                            <li class="sub-menu-item"><a href="#">Williams</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/news.html">Tin tức</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-news">
+                            <li class="sub-menu-item"><a href="#">Diễn biến mùa giải</a></li>
+                            <li class="sub-menu-item"><a href="#">Tạp chí công nghệ xe</a></li>
+                            <li class="sub-menu-item"><a href="#">Lịch sử giải đua</a></li>
+                            <li class="sub-menu-item"><a href="#">Góc khán đài Hà Nội</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Thông tin chặng đua</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <span class="root-item-border"></span>
+                </li>
+
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Đặt vé</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root search-root">
+                        <div class="search-item">
+                            <input type="text" name="searchall" />
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root user-root">
+                        <i class="far fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="login-area" loginstatus="false">
+            <form class="login-form">
+                <div class="form-nav"><i class="fas fa-times"></i></div>
+                <h1>Login</h1>
+                <div class="box-form">
+                    <input name="username" id="txtUserNameSignIn" type="text" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                </div>
+
+                <div class="box-form">
+                    <input name="password" id="txtPassWordSignIn" type="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                </div>
+                <input type="button" class="btn-log" value="Login" />
+                <div class="box-sign-up">
+                    <span style="color:#ffffff; cursor:default">Don't have account?</span>
+                    <a href="#" id="signup-request">Sign up</a>
+                </div>
+                <div class="icon-login">
+                    <div class="icon-login-item" id="loginwithfacebook"></div>
+                    <div class="icon-login-item" id="loginwithgoogle"></div>
+                </div>
+            </form>
+            <form class="signup-form">
+                <div class="form-nav">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <h1>Sign Up</h1>
+                <div class="box-form">
+                    <input type="text" name="username" id="txtUserNameSignUp" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtConfirmPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Enter The Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <input type="button" class="btn-sign" value="Sign Up" />
+
+            </form>
+        </div>
+        <div class="news-content">
+            <div class="teams-title">
+                <div class="teams-title-left">F1 Teams 2020</div>
+                <div class="teams-title-right">
+                    Discover the Formula 1 2020 teams - drivers, podium finishes,
+                    championship titles and everything you need to know about the teams
+                    in this year's F1 Championship.
+                </div>
+            </div>
+            <div class="teams-preview">
+                <div class="team-row">
+                    <a href="https://localhost:44381/html/mercedes.html" class="team-item-left mercedes" target="_top">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="mercedesspan"></span>Mercedes
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (10).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview" id="lewis">
+
+                                <div class="driver-preview-text">
+                                    Lewis Hamilton
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (20).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Valtteri Bottas
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (21).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image.png" />
+                        </div>
+                    </a>
+                    <a href="haas.html" target="_top" class="team-item-right haas">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="haasspan"></span>Haas F1 Team
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (11).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Romain Grosjean
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (22).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Kevin Magnussen
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (23).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (1).png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="team-row">
+                    <a href="#" class="team-item-left mclaren">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="mclarenspan"></span>McLaren
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (13).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Carlos Sainz
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (24).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Lando Norris
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (25).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (2).png" />
+                        </div>
+                    </a>
+                    <a href="#" class="team-item-right alfaromeo">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="alfaromeospan"></span>Alfa Romeo Racing
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (12).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Kimi Räikkönen
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (26).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Antonio Giovinazzi
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (27).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (3).png" />
+                        </div>
+                    </a>
+
+                </div>
+                <div class="team-row">
+                    <a href="#" class="team-item-left redbull">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="redbullspan"></span>Red Bull Racing
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (14).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Max Verstappen
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (28).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Alexander Albon
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (29).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (4).png" />
+                        </div>
+                    </a>
+                    <a href="#" class="team-item-right renault">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="renaultspan"></span>Renault
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (15).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Daniel Ricciardo
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (30).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Esteban Ocon
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (31).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (5).png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="team-row">
+                    <a href="#" class="team-item-left ferrari">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="ferrarispan"></span>Ferrari
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (16).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Sebastian Vettel
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (32).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Charles Leclerc
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (33).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (6).png" />
+                        </div>
+                    </a>
+                    <a href="#" class="team-item-right alphatauri">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="alphataurispan"></span>AlphaTauri
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (17).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Pierre Gasly
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (34).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Daniil Kvyat
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (35).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (7).png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="team-row">
+                    <a href="#" class="team-item-left williams">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="williamsspan"></span>Williams
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (19).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    George Russell
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (36).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Nicholas Latifi
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (37).png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item-cars">
+                            <img src="../images/image (8).png" />
+                        </div>
+                    </a>
+                    <a href="#" class="team-item-right racingpoint">
+                        <div class="team-item-name">
+                            <div class="team-item-name-text">
+                                <span class="racingpointspan"></span>Racing Point
+                            </div>
+                            <div class="team-item-name-logo">
+                                <img src="../images/image (18).png" />
+                            </div>
+                        </div>
+                        <div class="team-item-drivers">
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Sergio Rerez
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (38).png" />
+                                </div>
+                            </div>
+                            <div class="driver-preview">
+                                <div class="driver-preview-text">
+                                    Lance Stroll
+                                </div>
+                                <div class="driver-preview-image">
+                                    <img src="../images/image (39).png" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-item-cars">
+                            <img src="../images/image (9).png" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="teams-advertise">
+                <img src="../images/12325389430464247720.jpg" />
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fas fa-angle-double-up" style="line-height:50px"></i>
+    </div>
+
+    <div class="home-footer">
+        <div class="contact-infor">
+            <div class="logo-organizer"></div>
+            <div class="other-infor">
+                <div style="color: #ffffff;height: 60px;line-height: 60px;text-align: center;font-family: 'Prompt', sans-serif;">KẾT NỐI VỚI CHÚNG TÔI</div>
+                <div class="customer-care">
+                    <ul>
+                        <li><span style="cursor: default;">HOTLINE VÉ DOANH NGHIỆP: </span><span style="color: #ffd800; cursor: pointer;">+84 915 73 44 66</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ BÁN VÉ/TÀI TRỢ/MUA VÉ: </span><span style="color: #ffd800;cursor: pointer;">CHAMSOCKHACHHANG@F1VIETNAMGP.COM</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ QUỐC TẾ: </span><span style="color: #ffd800;cursor: pointer;">VIETNAMGP.RESELLER@PG-MC.COM</span></li>
+                    </ul>
+                </div>
+                <div class="app-care">
+                    <div class="app-care-item googleplay" style="margin-right: 20px"></div>
+                    <div class="app-care-item appstore" style="margin-right: 20px"></div>
+                    <div class="app-care-item huaweiapp"></div>
+                </div>
+                <div class="license">
+                    <span style="color: #ffd800;cursor: pointer;text-decoration:underline">Điều khoản và điều kiện sử dụng</span> | © 2019. Bản quyền thuộc về Vietnam Grand Prix LLC
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration-title">KHÔNG MUỐN BỎ LỠ NHỮNG SỰ KIỆN HẤP DẪN?<br /> ĐĂNG KÝ NHẬN THÔNG TIN NGAY!</div>
+            <div class="registration-infor">
+                <div class="registration-infor-name">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="TÊN/NAME"></span>
+                </div>
+                <div class="registration-infor-phone">
+                    <input type="tel" />
+                    <span class="effect-regis" data-placeholder="SỐ ĐIỆN THOẠI/NUMBER PHONE"></span>
+                </div>
+                <div class="registration-infor-address">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="ĐỊA CHỈ/ADDRESS"></span>
+                </div>
+                <div class="registration-infor-email">
+                    <input type="email" />
+                    <span class="effect-regis" data-placeholder="EMAIL"></span>
+                </div>
+                <div class="registration-infor-interested">
+                    <div class="interested-root">
+                        <input type="button" value="TÔI QUAN TÂM ĐẾN THÔNG TIN..." />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="interested-sub">
+                        <ul>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ PHỔ THÔNG</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ KHÁN ĐÀI</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ DOANH NGHIỆP</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>THÔNG TIN MỚI NHẤT VỀ F1 VINFAST VIETNAM GRAND PRIX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-infor-policy">
+                    <div class="policy-title">CHÍNH SÁCH BẢO MẬT</div>
+                    <div class="policy-preview">
+                        Vietnam Grand Prix LLC tôn trọng quyền riêng tư của bạn và bảo vệ thông tin cá nhân của người dùng,
+                        theo yêu cầu của pháp luật.<br />
+                        Chính sách bảo mật phác thảo cách chúng tôi quản lý thông tin cá nhân của người dùng.
+                    </div>
+                    <div class="policy-accept">
+                        <i class="far fa-square"><i class="fas fa-check"></i></i>
+                        <span style="cursor:default;">Tôi đồng ý với </span><span style="text-decoration: underline;color: #ffd800;cursor: pointer;">Chính sách bảo mật</span>
+                    </div>
+                </div>
+                <div class="registration-infor-accept">
+                    <input type="submit" name="name" value="ĐĂNG KÍ" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="time">
+        <div class="time-item"><span></span> Days</div>
+        <div class="time-item"><span></span> Hours</div>
+        <div class="time-item"><span></span> Minutes</div>
+        <div class="time-item"><span></span> Seconds</div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/teams.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

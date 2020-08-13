@@ -1,0 +1,427 @@
+﻿
+
+.login-area {
+    grid-column: 11/13;
+    grid-row: 2/8;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    overflow: hidden;
+    display: none;
+    max-height: 560px;
+}
+
+
+.login-form {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px 40px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: none;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 80px;
+    color: #fff;
+    cursor: default;
+}
+.box-form{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin-bottom: 50px;
+}
+    .box-form input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        line-height: 15px;
+        font-size: 18px;
+        color: #fff;
+        padding: 0 5px;
+        position: relative;
+        z-index: 2;
+    }
+    .box-form .effect-login::before {
+        content: attr(data-placeholder);
+        top: 0;
+        font-size: 18px;
+        color: #adadad;
+        z-index: 1;
+        position: absolute;
+        left: 5px;
+        transition: 0.5s;
+        color: #fff;
+    }
+    .box-form .effect-login::after {
+        content: "";
+        font-size: 18px;
+        color: #adadad;
+        position: absolute;
+        transition: 0.5s;
+        height: 2px;
+        width: 0%;
+        background-image: linear-gradient(120deg,#d92323,#ffd800);
+        transition: 0.5s;
+    }
+
+.focus + .effect-login::before {
+    top: -30px;
+    color: #ffd800;
+}
+
+.focus + .effect-login::after {
+    width: 100%;
+}
+
+.btn-log {
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(90deg, #d92323, #ffd800);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    left: calc(50% - 50px);
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+    .btn-log:hover, .btn-sign:hover {
+        background: linear-gradient(0deg, #d92323, #ffd800);
+        transition: 0.5s;
+    }
+
+.box-sign-up {
+    position: relative;
+    top: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+
+    .box-sign-up a {
+        text-decoration: none;
+        color: #ffd800;
+    }
+
+        .icon-login {
+            position: relative;
+            top: 60px;
+            width: auto;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+        }
+
+.icon-login-item {
+    width: 48px;
+    height: 48px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+#loginwithfacebook {
+    background-image: url('../images/facebook.png');
+}
+#loginwithgoogle {
+    background-image: url('../images/google-logo.png');
+}
+
+.signup-form {
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.btn-sign {
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(90deg, #d92323, #ffd800);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    left: calc(50% - 50px);
+    outline: none;
+    transition: 0.25s;
+}
+.form-nav .fas.fa-angle-left {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+.form-nav .fas.fa-times {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+
+    .fas.fa-angle-left:hover, .fas.fa-times:hover {
+        color: #ffd800;
+        transition: 0.5s;
+    }
+
+    .form-nav {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+
+.slide-to-hide {
+    animation: slidetohide 0.5s forwards;
+}
+
+@-webkit-keyframes slidetohide {
+    from{transform:translateX(0%);}
+    to {
+        transform: translateX(100%) ;
+    }
+}
+
+.slide-to-show {
+    animation: slidetoshow 0.5s forwards;
+    animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slidetoshow {
+    from {
+        transform: translateX(100%) ;
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+.poster {
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 50px;
+}
+
+.slides {
+    margin-left: 100px;
+    height: 600px;
+    width: 950px;
+    min-width: 800px;
+    
+    /*overflow: hidden;*/
+}
+.slide {
+    height: 600px;
+    width: 1900px;
+    position: absolute;
+    display: none;
+    
+}
+.active {
+    display: block;
+}
+
+.slide img {
+    height: 600px;
+    width: 950px;
+    border-radius: 10px;
+}
+
+.control-slides {
+    display: none;
+}
+.control-slides li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.slide-left-show {
+    animation: slideleftshow 0.5s forwards;
+}
+
+@-webkit-keyframes slideleftshow {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+.slide-left-hide {
+    animation: slidelefthide 0.5s forwards;
+}
+
+@-webkit-keyframes slidelefthide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.label-slide{
+    box-sizing: border-box;
+    margin-left: 50%;
+    transform: translateX(-35%);
+    display: flex;
+    margin-top: 50px;
+}
+
+.label-slide-item {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin: 0px 10px;
+    border-radius: 10px;
+    
+}
+
+    .label-slide-item:hover {
+        background: #fff;
+    }
+
+    .label-active {
+        background: #fff;
+    }
+
+.slide-right-show {
+    animation: sliderightshow 0.5s forwards;
+}
+
+@-webkit-keyframes sliderightshow {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.slide-right-hide {
+    animation: sliderighthide 0.5s forwards;
+}
+
+@-webkit-keyframes sliderighthide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.slide-down-show {
+    animation: slidedownshow 0.5s forwards;
+}
+
+@-webkit-keyframes slidedownshow {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.slide-up-hide {
+    animation: slideuphide 0.5s forwards;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes slideuphide {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .login-area {
+        grid-column: 2/12;
+        grid-row: 2/8;
+        position: relative;
+        z-index: 2;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        overflow: hidden;
+        display: none;
+        max-height: 560px;
+    }
+    .login {
+        grid-column: 1/13;
+        box-sizing: border-box;
+        position: relative;
+        opacity: 0.8;
+        overflow: auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .login {
+        grid-column: 5/13;
+        box-sizing: border-box;
+        position: relative;
+        opacity: 0.8;
+        overflow: auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .login {
+        grid-column: 1/13;
+        box-sizing: border-box;
+        position: relative;
+        opacity: 0.8;
+        overflow: auto;
+        width: 100%;
+    }
+}

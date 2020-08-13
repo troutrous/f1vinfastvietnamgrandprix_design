@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vettel rời Ferrari cuối mùa 2020</title>
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../images/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/news.css" rel="stylesheet" />
+    <link href="../css/newsitem.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="troutrous">
+        <div id="menu">
+            <ul class="root">
+                <li class="root-item">
+                    <div class="box-root" id="home">
+                        <a href="https://localhost:44381/html/home.html" target="_top">VietNam Vinfast Grand Prix 2020</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                </li>
+                <li class="root-item">
+
+                    <div class="box-root">
+                        <a href="#">Về chúng tôi</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-about">
+                            <li class="sub-menu-item"><a href="#">Thông cáo báo chí</a></li>
+                            <li class="sub-menu-item"><a href="#">Trách nhiệm cộng đồng</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Cà phê cùng F1</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/teams.html#" target="_top">Các đội đua</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-teams">
+                            <li class="sub-menu-item"><a href="#">Alfa Romeo Racing</a></li>
+                            <li class="sub-menu-item"><a href="#">AlphaTauri</a></li>
+                            <li class="sub-menu-item"><a href="#">Ferrari</a></li>
+                            <li class="sub-menu-item"><a href="haas.html" target="_top">Haas</a></li>
+                            <li class="sub-menu-item"><a href="#">McLaren</a></li>
+                            <li class="sub-menu-item"><a href="mercedes.html" target="_top">Mercedes</a></li>
+                            <li class="sub-menu-item"><a href="#">Racing Point</a></li>
+                            <li class="sub-menu-item"><a href="#">Red Bull</a></li>
+                            <li class="sub-menu-item"><a href="#">Renault</a></li>
+                            <li class="sub-menu-item"><a href="#">Williams</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="https://localhost:44381/html/news.html" style="color:#d92323;">Tin tức</a>
+                        <i class="fas fa-caret-down"></i>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <div class="sub-menu">
+                        <ul id="sub-news">
+                            <li class="sub-menu-item"><a href="#">Diễn biến mùa giải</a></li>
+                            <li class="sub-menu-item"><a href="#">Tạp chí công nghệ xe</a></li>
+                            <li class="sub-menu-item"><a href="#">Lịch sử giải đua</a></li>
+                            <li class="sub-menu-item"><a href="#">Góc khán đài Hà Nội</a></li>
+                        </ul>
+
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Thông tin chặng đua</a>
+                        <span class="root-item-border"></span>
+                    </div>
+                    <span class="root-item-border"></span>
+                </li>
+
+                <li class="root-item">
+                    <div class="box-root">
+                        <a href="#">Đặt vé</a>
+                        <span class="root-item-border"></span>
+                    </div>
+
+                </li>
+                <li class="root-item">
+                    <div class="box-root search-root">
+                        <div class="search-item">
+                            <input type="text" name="searchall" />
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="root-item">
+                    <div class="box-root user-root">
+                        <i class="far fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-left">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="login-area" loginstatus="false">
+            <form class="login-form">
+                <div class="form-nav"><i class="fas fa-times"></i></div>
+                <h1>Login</h1>
+                <div class="box-form">
+                    <input name="username" id="txtUserNameSignIn" type="text" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                </div>
+
+                <div class="box-form">
+                    <input name="password" id="txtPassWordSignIn" type="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                </div>
+                <input type="button" class="btn-log" value="Login" />
+                <div class="box-sign-up">
+                    <span style="color:#ffffff; cursor:default">Don't have account?</span>
+                    <a href="#" id="signup-request">Sign up</a>
+                </div>
+                <div class="icon-login">
+                    <div class="icon-login-item" id="loginwithfacebook"></div>
+                    <div class="icon-login-item" id="loginwithgoogle"></div>
+                </div>
+            </form>
+            <form class="signup-form">
+                <div class="form-nav">
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <h1>Sign Up</h1>
+                <div class="box-form">
+                    <input type="text" name="username" id="txtUserNameSignUp" />
+                    <span class="effect-login" data-placeholder="Username"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <div class="box-form">
+                    <input type="password" id="txtConfirmPassWordSignUp" name="password" />
+                    <span class="effect-login" data-placeholder="Enter The Password"></span>
+                    <!--placeholder: cung cấp thông tin cần nhập cái gì cho người dùng-->
+                </div>
+
+                <input type="button" class="btn-sign" value="Sign Up" />
+
+            </form>
+        </div>
+        <div class="news-content">
+            <div class="news-hightlight">
+                <a href="news-vettel-roi-ferrari-cuoi-mua-2020.html" target="_top" class="n-h-1">
+                    <div class="image-preview">
+                        <img src="../images/vettel-1589268322-1589268330-8644-1589268373_900x540.jpg" alt="Vettel rời Ferrari cuối mùa 2020" />
+                    </div>
+                    <div class="title-preview">Vettel rời Ferrari cuối mùa 2020</div>
+                    <div class="text-preview">Tay đua Sebastian Vettel trắng tay ở Ferrari vì sự vượt trội của Mercedes và Lewis Hamilton, bên cạnh loạt sai lầm do tâm lý.</div>
+                </a>
+                <a href="news-xe-dua-f1-chay-vong-quanh-ha-lan.html" target="_top" class="n-h-2">
+                    <div class="image-preview">
+                        <img src="../images/a-1588649717-1692-1588649810_300x180.jpg" alt="Xe đua F1 chạy vòng quanh Hà Lan" />
+                    </div>
+                    <div class="title-preview">Xe đua F1 chạy vòng quanh Hà Lan</div>
+                </a>
+                <a href="news-grand-prix-hungary-dua-khong-khan-gia.html" target="_top" class="n-h-3">
+                    <div class="image-preview">
+                        <img src="../images/a-1588380517-6903-1588380574_300x180.jpg" alt="Grand Prix Hungary đua không khán giả" />
+                    </div>
+                    <div class="title-preview">Grand Prix Hungary đua không khán giả</div>
+                </a>
+                <a href="news-f1-dinh-to-chuc-ba-chang-lien-o-anh.html" target="_top" class="n-h-4">
+                    <div class="image-preview">
+                        <img src="../images/silver-1587148711-1587148720-6089-1587148938_300x180.jpg" alt="F1 định tổ chức ba chặng liền ở Anh" />
+                    </div>
+                    <div class="title-preview">F1 định tổ chức ba chặng liền ở Anh</div>
+                </a>
+                <a href="news-f1-tiep-tuc-lui-ngay-khoi-tranh.html" target="_top" class="n-h-5">
+                    <div class="image-preview">
+                        <img src="../images/a-1586394861-2815-1586394972_300x180.jpg" alt="F1 tiếp tục lùi ngày khởi tranh" />
+                    </div>
+                    <div class="title-preview">F1 tiếp tục lùi ngày khởi tranh</div>
+                </a>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-item-root">
+                        <div class="news-item-header">
+                            <div class="header-filter"><span>Tin tức</span><i class="fas fa-angle-right"></i><span>Diễn biến mùa giải</span></div>
+                            <div class="header-dateupload"><span>Thứ ba, 12/5/2020, 14:34 (GMT+7)</span></div>
+                        </div>
+                        <div class="news-item-title">
+                            Vettel rời Ferrari cuối mùa 2020
+                        </div>
+                        <div class="description">
+                            <span>Đội đua F1 Ferrari thông báo hôm nay 12/5 rằng họ và tay đua Sebastian Vettel sẽ không gia hạn hợp đồng.</span>
+                        </div>
+                        <div class="normal">
+                            <span>
+                                "Ferrari và Vettel cùng đi đến quyết định không gia hạn hợp đồng, vốn hết hạn vào cuối mùa giải F1 2020", trang <a href="Ferrari.com" target="_blank">Ferrari.com</a> thông báo.
+                            </span>
+                        </div>
+                        <div class="normal">
+                            <span>
+                                Lãnh đội Mattia Binotto nói: "Ferrari lẫn Vettel đều cảm thấy quyết định này
+                                tốt nhất cho cả hai. Chúng tôi không dễ đưa ra quyết định này, vì Vettel rất tài
+                                năng và đáng mến. Không có nguyên nhân cụ thể dẫn tới sự chia ly này, chỉ vì chúng
+                                tôi cảm thấy đã đến lúc hai bên nên dừng lại. Cả hai đều muốn tìm kiếm những mục tiêu riêng".
+                            </span>
+                        </div>
+                        <div class="news-item-images">
+                            <img src="https://i1-thethao.vnecdn.net/2020/05/12/vettel-1589268322-1589268337-5015-1589268373.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=5R3X1_9w-c1gccrnESC3_w" alt="Vettel sẽ khép lại sáu năm thi đấu cho Ferrari. Ảnh: Ferrari.com." />
+                            <figure>
+                                <figcaption>Vettel sẽ khép lại sáu năm thi đấu cho Ferrari. Ảnh: <i>Ferrari.com</i>.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="normal">
+                            <span>
+                                Tay đua Đức cho rằng vấn đề không nằm ở tiền bạc. Anh nói trên trang chủ Ferrari: "Tài chính không
+                                liên quan gì đến quyết định này. Tôi chưa và sẽ không bao giờ để tiền bạc ảnh hưởng đến những quyết
+                                định quan trọng. Những gì xảy ra trong vài tháng qua giúp chúng tôi tìm ra mục tiêu thực sự trong cuộc
+                                sống. Tôi sẽ dành thêm thời gian để tìm hiểu những gì có ý nghĩa nhất đối với tương lai của mình. Ferrari
+                                vẫn luôn chiếm vị trí quan trọng với tôi, và hy vọng họ gặt hái hành công. Cảm ơn gia đình Ferrari và các
+                                'tifosi' toàn thế giới. Mục tiêu lúc này của tôi là kết thúc mùa giải với nhiều kỷ niệm đẹp và đáng nhớ".
+                            </span>
+                        </div>
+                        <div class="normal">
+                            <span>
+                                Vettel bắt đầu thi đấu cho Ferrari từ mùa 2015, sau khi rời Red Bull. Tay đua bốn lần vô địch thế giới thắng
+                                14 chặng cùng Ferrari, giúp đội đua này về nhì năm 2017 và 2018. Trong cả hai mùa này, Vettel đều đứng sau Lewis Hamilton.
+                            </span>
+                        </div>
+                        <div class="normal">
+                            <span>
+                                Mùa trước, Vettel bị đồng đội Charles Leclerc cạnh tranh cho vị trí tay đua chủ lực. Vettel chỉ đứng thứ năm tại giải, sau Hamilton,
+                                Valtteri Bottas, Max Verstappen và Leclerc. Tháng 12/2019, Ferrari gia hạn hợp đồng với Leclerc tới cuối năm 2024.
+                            </span>
+                        </div>
+                        <div class="normal">
+                            <span>
+                                Tờ báo Italy Gazetta dello Sport tiết lộ Ferrari cũng đề nghị Vettel gia hạn thêm một năm, nhưng tay đua 32 tuổi phải giảm
+                                lương. Autoweek cho rằng lương của Vettel hiện rơi vào khoảng 41 triệu đến 45 triệu USD mỗi năm.
+                            </span>
+                        </div>
+                        <div class="news-item-recommend">
+                            <div class="news-item-related">
+                                <ul>
+                                    <li>
+                                        <a href="news-grand-prix-hungary-dua-khong-khan-gia.html" target="_top">
+                                            <div class="image-preview">
+                                                <img src="../images/a-1588380517-6903-1588380574_300x180.jpg" alt="Grand Prix Hungary đua không khán giả" />
+                                            </div>
+                                            <div class="title-preview">Grand Prix Hungary đua không khán giả</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news-f1-dinh-to-chuc-ba-chang-lien-o-anh.html" target="_top">
+                                            <div class="image-preview">
+                                                <img src="../images/silver-1587148711-1587148720-6089-1587148938_300x180.jpg" alt="F1 định tổ chức ba chặng liền ở Anh" />
+                                            </div>
+                                            <div class="title-preview">F1 định tổ chức ba chặng liền ở Anh</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news-f1-tiep-tuc-lui-ngay-khoi-tranh.html" target="_top">
+                                            <div class="image-preview">
+                                                <img src="../images/a-1586394861-2815-1586394972_300x180.jpg" alt="F1 tiếp tục lùi ngày khởi tranh" />
+                                            </div>
+                                            <div class="title-preview">F1 tiếp tục lùi ngày khởi tranh</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="news-f1-thay-the-duong-dua-viet-nam-trong-giai-ao.html" target="_top">
+                                            <div class="image-preview">
+                                                <img src="https://i-thethao.vnecdn.net/2020/04/05/a-jpeg-1586074088-1740-1586074230_300x180.jpg" alt="F1 thay thế đường đua Việt Nam trong giải ảo" />
+                                            </div>
+                                            <div class="title-preview">F1 thay thế đường đua Việt Nam trong giải ảo</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news-ferrari-muon-vettel-giam-luong.html" target="_top">
+                                            <div class="image-preview">
+                                                <img src="https://i-thethao.vnecdn.net/2020/03/28/a-1585360186-1623-1585360272_300x180.jpg" alt="Ferrari muốn Vettel giảm lương" />
+                                            </div>
+                                            <div class="title-preview">Ferrari muốn Vettel giảm lương</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news-giam-doc-f1-mua-2020-co-it-nhat-17-18-chang-dua.html" target="_top">
+                                            <div class="image-preview">
+                                                <img src="https://i-thethao.vnecdn.net/2020/03/15/a-1584257831-1918-1584257932_300x180.jpg" alt="Giám đốc F1: 'Mùa 2020 có ít nhất 17-18 chặng đua'" />
+                                            </div>
+                                            <div class="title-preview">Giám đốc F1: 'Mùa 2020 có ít nhất 17-18 chặng đua'</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="news-item-footer">
+                            <div class="footer-left">
+                                <span>Chia sẻ</span>
+                                <i class="fab fa-facebook" title="Chia sẻ qua Facebook"></i>
+                                <i class="fab fa-twitter" title="Chia sẻ qua Twitter"></i>
+                                <i class="fas fa-envelope" title="Chia sẻ quá Mail"></i>
+                                <i class="fas fa-link" title="Sao chép đường dẫn"></i>
+                            </div>
+                            <div class="footer-right">
+                                <span>Xuân Bình (theo Ferrari.com)</span>
+                                <i class="far fa-bookmark" title="Lưu tin"></i>
+                            </div>
+                        </div>
+                        <div class="news-item-comment">
+                            <div class="your-comment" typecomment="comment">
+                                <textarea maxlength="1500"></textarea>
+                                <span class="effect-regis" data-placeholder="Ý kiến của bạn..."></span>
+                                <div class="your-comment-sent">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <ul class="comment-lever-one">
+                                <li>
+                                    <div class="user-avatar">
+                                        <img src="../images/thanhbinh.jpg" />
+                                    </div>
+                                    <div class="user-comment">
+                                        <div class="user-name">zizicose</div>
+                                        <div class="user-comment-text">
+                                            Tôi thấy một điều rất lạ. Từ sau khi Schumi giải nghệ. Ferrari hình như đi xuống.
+                                            Nào Massa, Alonso đến Vettel đều không mang lại chức vô địch. Mà họ đâu phải không
+                                            tài năng. Tôi hâm mộ Hamilton chứ không hâm mộ Vettel nhưng có lẽ bản thân đội đua
+                                            Ferrari có vấn đề hơn là lỗi của tay đua
+                                        </div>
+                                        <div class="user-comment-react">
+                                            <i class="fas fa-thumbs-up" title="Thích"></i>
+                                            <i class="fas fa-reply" title="Trả lời"></i>
+                                            <i class="fas fa-share-alt-square" title="Chia sẻ"></i>
+                                        </div>
+                                        <ul class="comment-lever-two">
+                                            <li>
+                                                <div class="user-avatar">
+                                                    <img src="../images/hongson.jpg" />
+                                                </div>
+                                                <div class="user-comment">
+                                                    <div class="user-name">hồng sơn</div>
+                                                    <div class="user-comment-text">
+                                                        Mùa giải 2018 là cơ hội tuyệt vời để đánh bại hamilton và mer nhưng cú
+                                                        húc tường định mệnh ở nurburging đã lấy đi tất cả. Cả phong độ của vettel mùa giải 2019.
+                                                    </div>
+                                                    <div class="user-comment-react">
+                                                        <i class="fas fa-thumbs-up" title="Thích"></i>
+                                                        <i class="fas fa-reply" title="Trả lời"></i>
+                                                        <i class="fas fa-share-alt-square" title="Chia sẻ"></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="your-comment" typecomment="reply">
+                                            <textarea maxlength="1500"></textarea>
+                                            <span class="effect-regis" data-placeholder="Ý kiến của bạn..."></span>
+                                            <div class="your-comment-sent">
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user-avatar">
+                                        <img src="../images/ngochung.jpg" />
+                                    </div>
+                                    <div class="user-comment">
+                                        <div class="user-name">ngọc hùng</div>
+                                        <div class="user-comment-text">
+                                            Vettel chỉ mạnh khi ở red bull . sang ferari sự nghiệp đi xuống. người có cá tính như
+                                            vettel kh chịu ở lại ferrari để làm tay đua số 2 sau leclerc đâu. chắc sau mùa nay anh
+                                            ta giải nghệ. vì ngoài ferrari chỉ còn mercedes là đủ mạnh để đáp ứng được tham vọng của
+                                            vettel , mà mer giờ này đã có hamilton rồi , tôi nghĩ 2 người này kh thể ở chung trong 1 đội được.
+                                        </div>
+                                        <div class="user-comment-react">
+                                            <i class="fas fa-thumbs-up" title="Thích"></i>
+                                            <i class="fas fa-reply" title="Trả lời"></i>
+                                            <i class="fas fa-share-alt-square" title="Chia sẻ"></i>
+                                        </div>
+                                        <ul class="comment-lever-two"></ul>
+                                        <div class="your-comment" typecomment="reply">
+                                            <textarea maxlength="1500"></textarea>
+                                            <span class="effect-regis" data-placeholder="Ý kiến của bạn..."></span>
+                                            <div class="your-comment-sent">
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user-avatar">
+                                        <img src="../images/quangdat.jpg" />
+                                    </div>
+                                    <div class="user-comment">
+                                        <div class="user-name">Quang Đạt</div>
+                                        <div class="user-comment-text">
+                                            Leclerc là chiến lược đầu tư dài hơi vì cậu ấy còn trẻ thời gian cống hiến lâu dài cho fe..
+                                            biết đâu sau cú này về mer con hal lại chuyển sang fe .. sẽ thú vị đây.. năm sau toto rời mer
+                                            thì hal cũng chia tay mer để tìm thử thách mới... còn nơi nào hợp hơn fe
+                                        </div>
+                                        <div class="user-comment-react">
+                                            <i class="fas fa-thumbs-up" title="Thích"></i>
+                                            <i class="fas fa-reply" title="Trả lời"></i>
+                                            <i class="fas fa-share-alt-square" title="Chia sẻ"></i>
+                                        </div>
+                                        <ul class="comment-lever-two"></ul>
+                                        <div class="your-comment" typecomment="reply">
+                                            <textarea maxlength="1500"></textarea>
+                                            <span class="effect-regis" data-placeholder="Ý kiến của bạn..."></span>
+                                            <div class="your-comment-sent">
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-nav">
+                    <div class="news-ads">
+                        <img src="https://adtima-media.zadn.vn/2020/04/7decd5e7-454d-4d85-a9d0-aa9bc4c8cf7c.jpg" alt="Zalo-Ads" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="back-to-top">
+        <i class="fas fa-angle-double-up" style="line-height:50px"></i>
+    </div>
+    <div class="home-footer">
+        <div class="contact-infor">
+            <div class="logo-organizer"></div>
+            <div class="other-infor">
+                <div style="color: #ffffff;height: 60px;line-height: 60px;text-align: center;font-family: 'Prompt', sans-serif;">KẾT NỐI VỚI CHÚNG TÔI</div>
+                <div class="customer-care">
+                    <ul>
+                        <li><span style="cursor: default;">HOTLINE VÉ DOANH NGHIỆP: </span><span style="color: #ffd800; cursor: pointer;">+84 915 73 44 66</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ BÁN VÉ/TÀI TRỢ/MUA VÉ: </span><span style="color: #ffd800;cursor: pointer;">CHAMSOCKHACHHANG@F1VIETNAMGP.COM</span></li>
+                        <li><span style="cursor: default;">ĐẠI LÝ QUỐC TẾ: </span><span style="color: #ffd800;cursor: pointer;">VIETNAMGP.RESELLER@PG-MC.COM</span></li>
+                    </ul>
+                </div>
+                <div class="app-care">
+                    <div class="app-care-item googleplay" style="margin-right: 20px"></div>
+                    <div class="app-care-item appstore" style="margin-right: 20px"></div>
+                    <div class="app-care-item huaweiapp"></div>
+                </div>
+                <div class="license">
+                    <span style="color: #ffd800;cursor: pointer;text-decoration:underline">Điều khoản và điều kiện sử dụng</span> | © 2019. Bản quyền thuộc về Vietnam Grand Prix LLC
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration-title">KHÔNG MUỐN BỎ LỠ NHỮNG SỰ KIỆN HẤP DẪN?<br /> ĐĂNG KÝ NHẬN THÔNG TIN NGAY!</div>
+            <div class="registration-infor">
+                <div class="registration-infor-name">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="TÊN/NAME"></span>
+                </div>
+                <div class="registration-infor-phone">
+                    <input type="tel" />
+                    <span class="effect-regis" data-placeholder="SỐ ĐIỆN THOẠI/NUMBER PHONE"></span>
+                </div>
+                <div class="registration-infor-address">
+                    <input type="text" />
+                    <span class="effect-regis" data-placeholder="ĐỊA CHỈ/ADDRESS"></span>
+                </div>
+                <div class="registration-infor-email">
+                    <input type="email" />
+                    <span class="effect-regis" data-placeholder="EMAIL"></span>
+                </div>
+                <div class="registration-infor-interested">
+                    <div class="interested-root">
+                        <input type="button" value="TÔI QUAN TÂM ĐẾN THÔNG TIN..." />
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="interested-sub">
+                        <ul>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ PHỔ THÔNG</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ KHÁN ĐÀI</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>VÉ DOANH NGHIỆP</li>
+                            <li><i class="far fa-square"><i class="fas fa-check"></i></i>THÔNG TIN MỚI NHẤT VỀ F1 VINFAST VIETNAM GRAND PRIX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-infor-policy">
+                    <div class="policy-title">CHÍNH SÁCH BẢO MẬT</div>
+                    <div class="policy-preview">
+                        Vietnam Grand Prix LLC tôn trọng quyền riêng tư của bạn và bảo vệ thông tin cá nhân của người dùng,
+                        theo yêu cầu của pháp luật.<br />
+                        Chính sách bảo mật phác thảo cách chúng tôi quản lý thông tin cá nhân của người dùng.
+                    </div>
+                    <div class="policy-accept">
+                        <i class="far fa-square"><i class="fas fa-check"></i></i>
+                        <span style="cursor:default;">Tôi đồng ý với </span><span style="text-decoration: underline;color: #ffd800;cursor: pointer;">Chính sách bảo mật</span>
+                    </div>
+                </div>
+                <div class="registration-infor-accept">
+                    <input type="submit" name="name" value="ĐĂNG KÍ" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="time">
+        <div class="time-item"><span></span> Days</div>
+        <div class="time-item"><span></span> Hours</div>
+        <div class="time-item"><span></span> Minutes</div>
+        <div class="time-item"><span></span> Seconds</div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/newsitem.js"></script>
+</body>
+</html>
